@@ -213,7 +213,7 @@ _id_5119()
     maps\_audio::aud_send_msg( "cinematic_sequence_prep" );
     maps\intro_code::_id_7147( "india_flashback_1_1" );
     maps\intro_code::_id_6FCC();
-    thread maps\_utility::vision_set_fog_changes( "Intro_cinematics", 0 );
+    //thread maps\_utility::vision_set_fog_changes( "Intro_cinematics", 0 ); //HERE
     thread maps\intro_code::_id_6FCE();
     maps\intro_code::_id_7149( "india_flashback_1_1" );
     maps\intro_code::_id_7147( "india_flashback_2_1" );
