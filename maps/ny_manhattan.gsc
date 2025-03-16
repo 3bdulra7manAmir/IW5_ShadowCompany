@@ -478,7 +478,7 @@ _id_4809()
     level.player setchannelvolume( "ambdist2", 0 );
 }
 
-_id_481D()
+_id_481D() //HERE
 {
     maps\_audio::aud_send_msg( "start_no_briefing" );
     common_scripts\utility::flag_set( "briefing_done" );
@@ -492,12 +492,12 @@ _id_481D()
     maps\_utility::_id_26BF( "ally_colors_first_combat_blue" );
     thread maps\_utility::vision_set_fog_changes( "ny_manhattan", 0 );
     thread maps\ny_manhattan_code_intro::_id_45AF();
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
     level._id_45C4.name = "Truck - Shadow Company";
 }
 
-_id_481E()
+_id_481E() //HERE
 {
     maps\_audio::aud_send_msg( "start_fifteen_broad" );
     common_scripts\utility::flag_set( "level_started_fx" );
@@ -512,12 +512,12 @@ _id_481E()
     common_scripts\utility::flag_set( "broad_squad_moveup" );
     thread maps\ny_manhattan_code_intro::_id_45C3();
     thread maps\ny_manhattan_code_intro::_id_4615();
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
 
-_id_481F()
+_id_481F() //HERE
 {
     maps\_audio::aud_send_msg( "start_nyse" );
     common_scripts\utility::flag_set( "level_started_fx" );
@@ -538,12 +538,12 @@ _id_481F()
     thread maps\ny_manhattan_code_intro::_id_4615();
     maps\_utility::_id_265B( "allies" );
     common_scripts\utility::flag_set( "obj_follow_to_roof_given" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
 
-_id_4820()
+_id_4820() //HERE
 {
     maps\_audio::aud_send_msg( "start_jammer" );
     common_scripts\utility::flag_set( "level_started_fx" );
@@ -593,12 +593,12 @@ _id_4820()
     thread maps\ny_manhattan_code_hind::_id_471B();
     maps\_utility::_id_265B( "allies" );
     common_scripts\utility::flag_set( "obj_jammer_given" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
 
-_id_4823()
+_id_4823() //HERE
 {
     common_scripts\utility::flag_set( "level_started_fx" );
     common_scripts\utility::flag_set( "flashbang_done" );
@@ -608,7 +608,7 @@ _id_4823()
     setsaveddvar( "sm_qualityspotshadow", 0 );
     maps\_audio::aud_send_msg( "start_stephanies_battle" );
     _id_481C( "start_stephanies_battle" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -636,7 +636,7 @@ _id_4824()
 	level._id_45C4.name = "Truck - Shadow Company";
 }
 
-_id_4825()
+_id_4825() //HERE
 {
     common_scripts\utility::flag_init( "end_new_orders_dialogue" );
     common_scripts\utility::flag_set( "level_started_fx" );

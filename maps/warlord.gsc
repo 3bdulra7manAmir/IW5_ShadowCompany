@@ -44,6 +44,7 @@ main()
     precachemodel( "weapon_machette" );
     precachemodel( "viewhands_yuri" );
     precachemodel( "viewhands_player_yuri" );
+    precachemodel( "viewhands_player_delta_shg" ); //HERE
     precachemodel( "africa_civ_male_notburned" );
     precachemodel( "africa_civ_male_burned" );
     precachemodel( "vehicle_mi17_africa_palette" );
@@ -70,7 +71,8 @@ main()
     maps\_utility::_id_1E74( "start_confrontation", ::_id_6E7F, "", ::_id_6E80 );
     maps\warlord_precache::main();
     maps\createart\warlord_art::main();
-    maps\_load::_id_1F5C( "viewhands_player_yuri" );
+    //maps\_load::_id_1F5C( "viewhands_player_yuri" ); //HERE
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" );
     common_scripts\utility::flag_init( "allies_spawned" );
     common_scripts\utility::flag_init( "play_river_dialogue" );
     common_scripts\utility::flag_init( "warlord_advance" );

@@ -21,7 +21,7 @@ _id_47D9()
     level._id_0C59["player_rig"]["player_getin"] = %roadkill_hummer_player_getin;
     level._id_0C59["player_rig"]["ny_intro"] = %ny_manhattan_intro_player;
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_delta_shg";
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //Here
     level._id_0C59["player_rig"]["ny_harbor_hind_entry"] = %ny_harbor_hind_enter_viewmodel;
     level._id_1245["player_legs"] = #animtree;
     level._id_1F90["player_legs"] = "viewlegs_generic";

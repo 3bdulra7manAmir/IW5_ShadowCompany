@@ -12,6 +12,7 @@ spawn_allies()
             level._id_4877 maps\_utility::_id_0D04();
 
         level._id_4877._id_1032 = "price";
+        level._id_4877.name = "Captain. Price";
         level._id_4877._id_0D0D = 1;
         level._id_4877.ignoresuppression = 1;
         level._id_4877 thread maps\warlord_utility::_id_6B90();
@@ -34,6 +35,10 @@ spawn_allies()
         level._id_54E0._id_0AB4 = "TF";
         level._id_54E0._id_6BDD = "g";
     }
+
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
 
     common_scripts\utility::flag_set( "allies_spawned" );
 }
@@ -79,6 +84,10 @@ _id_6C54()
 
 _id_6C55()
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     common_scripts\utility::flag_set( "play_river_dialogue" );
     level.player disableweapons();
     level.player freezecontrols( 1 );
@@ -3666,7 +3675,12 @@ _id_6D41( var_0 )
     var_1 = spawnstruct();
     var_1.origin = self.origin;
     var_1.angles = self.angles;
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     var_2 = maps\_utility::_id_1287( "player_rig" );
+
     var_2 hide();
     common_scripts\utility::flag_set( "throat_stab" );
     var_3 = [];
@@ -5129,6 +5143,10 @@ _id_6DA7()
 
 _id_6DA8( var_0 )
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     level endon( "technical_combat_complete" );
     var_1 = self gettagorigin( "tag_gunner" );
     var_0 makeunusable();
@@ -5152,6 +5170,10 @@ _id_6DA8( var_0 )
 
 _id_6DAA( var_0, var_1 )
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     var_2 = [];
     var_2["player_rig"] = var_0;
     var_2["turret"] = var_1;
@@ -5218,6 +5240,11 @@ _id_6DAC()
 
 _id_6DAD( var_0 )
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
+
     level endon( "mortar_technical_hit" );
     level.player enableweapons();
     level.player playerlinktodelta( self, "tag_gunner", 1, 180, 180, 180, 25 );
@@ -5341,6 +5368,10 @@ _id_6DB2( var_0 )
     if ( isdefined( var_10 ) )
         var_10 notify( "trigger" );
 
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     level.player disableweapons();
     level._id_6BF1 useby( level.player );
     level._id_6BF1 detach( level._id_1F90["player_rig"], "tag_player" );
@@ -5852,6 +5883,10 @@ _id_6DD7()
 
 _id_6DD8()
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     var_0 = getent( "trig_mortar_roof_collapse", "targetname" );
     var_0 waittill( "trigger" );
     common_scripts\utility::flag_set( "mortar_timer_done" );
@@ -6916,6 +6951,10 @@ _id_6E2C()
     var_5 maps\_utility::_id_0D72( 0 );
     var_6 = maps\_utility::_id_1287( "crate" );
     var_1 maps\_anim::_id_11CF( var_6, "warlord_ending" );
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     var_7 = maps\_utility::_id_1287( "player_rig" );
     var_7 hide();
     level._id_45FA = maps\_utility::_id_1287( "player_legs" );

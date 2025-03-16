@@ -379,7 +379,8 @@ _id_5004()
 _id_5B48()
 {
     level._id_1245["test_body"] = #animtree;
-    level._id_1F90["test_body"] = "viewhands_player_fso";
+    //level._id_1F90["test_body"] = "viewhands_player_fso";
+    level._id_1F90["test_body"] = "viewhands_player_delta_shg";
     level._id_0C59["test_body"]["zero_g_player"] = %hijack_zero_g_player;
     maps\_anim::_id_1264( "test_body", "people_lurch_left", maps\hijack_airplane::_id_5B0E, "zero_g_player" );
     maps\_anim::_id_1264( "test_body", "plane_dive_down", maps\hijack_airplane::_id_5B10, "zero_g_player" );
@@ -396,7 +397,8 @@ _id_5B48()
 player()
 {
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_fso";
+    //level._id_1F90["player_rig"] = "viewhands_player_fso";
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg";
     level._id_0C59["player_rig"]["debate_react_player"] = %hijack_debate_react_player;
     level._id_0C59["player_rig"]["crash_fall_out"] = %hijack_plane_crash_fall_out_player;
     level._id_0C59["player_rig"]["help_player_up"] = %hijack_tarmac_agent_helps_player;

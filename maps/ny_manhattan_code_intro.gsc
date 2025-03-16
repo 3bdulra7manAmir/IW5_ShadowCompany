@@ -34,12 +34,12 @@ _id_459E()
     maps\_utility::_id_27C0( var_1, var_0, 1 );
 }
 
-_id_3F72( var_0 )
+_id_3F72( var_0 ) //HERE
 {
     level.player takeallweapons();
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewmodel_base_viewhands" ); //HERE
     
-    level.player giveweapon( "ak47_silencer_reflex" );
+    level.player giveweapon( "ak47_silencer_reflex" ); //HERE
     level.player setweaponammostock( "ak47_silencer_reflex", 2500 );
     level.player switchtoweaponimmediate( "ak47_silencer_reflex" );
 

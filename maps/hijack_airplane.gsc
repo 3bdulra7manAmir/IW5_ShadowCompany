@@ -93,6 +93,8 @@ _id_5A5E()
     thread _id_5A9C();
     thread _id_5ADF();
     thread maps\hijack::_id_5A17();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A5F()
@@ -164,6 +166,8 @@ _id_5A5F()
     thread maps\hijack::_id_5A17();
     wait 0.2;
     thread _id_5ABB();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A60()
@@ -202,6 +206,8 @@ _id_5A60()
     common_scripts\utility::flag_set( "in_guard_position" );
     common_scripts\utility::flag_set( "move_pres" );
     thread maps\hijack::_id_5A17();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A61()
@@ -244,6 +250,8 @@ _id_5A61()
     thread _id_5AED();
     thread _id_5B1D();
     thread maps\hijack::_id_5A17();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A9B()
@@ -251,6 +259,8 @@ _id_5A9B()
     maps\_audio::aud_send_msg( "rumble" );
     earthquake( 0.12, 4.5, level.player.origin, 80000 );
     level.player playrumbleonentity( "hijack_plane_low" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A9C()
@@ -271,6 +281,8 @@ _id_5A9C()
     common_scripts\utility::flag_wait( "move_pres" );
     var_2 = common_scripts\utility::getstruct( "obj_pres_move", "targetname" );
     objective_add( maps\_utility::_id_2816( "move_president" ), "current", &"HIJACK_MOVE_PRES", var_2.origin );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A9D()
@@ -290,6 +302,8 @@ _id_5A9D()
     maps\_introscreen::_id_1D96( var_1 );
     wait 3;
     common_scripts\utility::flag_set( "introscreen_done" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A9E()
@@ -306,6 +320,8 @@ _id_5A9E()
     maps\_utility::_id_11F4( "hijack_cmd_landinhamburg" );
     wait 0.75;
     maps\_utility::_id_11F4( "hijack_cmd_remainwithpres" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5119()
@@ -370,6 +386,9 @@ _id_5119()
     common_scripts\utility::flag_set( "start_amb_guys" );
     var_4 = getent( "block_player_from_daughter_volume", "targetname" );
     var_5 = getent( "block_player_from_daughter_2", "targetname" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
+
 
     if ( !level.player istouching( var_4 ) )
     {
@@ -389,6 +408,9 @@ _id_5119()
 
     if ( !common_scripts\utility::flag( "in_guard_position" ) )
         level._id_59A0 thread maps\_anim::_id_124E( level._id_58BA, "intro_cine_president_wait_loop", "stop_intro_loop" );
+
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_0321()
@@ -399,6 +421,8 @@ _id_0321()
     self hidepart( "ri_wheel_base_jnt", "vehicle_mig29" );
     self hidepart( "le_wheel_panel_jnt", "vehicle_mig29" );
     self hidepart( "le_wheel_base_jnt", "vehicle_mig29" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA1()
@@ -436,6 +460,8 @@ _id_5AA2()
     level._id_58B8 maps\_vehicle::_id_2A73();
     level._id_5AA3 thread _id_0321();
     level._id_58B8 thread _id_0321();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA4()
@@ -451,6 +477,8 @@ _id_5AA4()
     maps\hijack_code::_id_5956( "hijack_plt_message3", var_0 );
     wait 5;
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA5()
@@ -460,6 +488,9 @@ _id_5AA5()
 
     if ( !common_scripts\utility::flag( "in_guard_position" ) )
         level._id_59A0 thread maps\_anim::_id_124E( level._id_58CB, "intro_cine_hero_agent_loop", "stop_intro_loop" );
+
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA6()
@@ -473,6 +504,8 @@ _id_5AA6()
     level._id_58CB waittillmatch( "single anim", "start_intro" );
     level._id_59A0 thread maps\_anim::_id_1246( var_1, "intro_cine_presdoor_open" );
     level._id_5AA0 waittillmatch( "single anim", "close_door" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA7()
@@ -550,6 +583,8 @@ _id_5AA7()
     var_12 delete();
     var_13 delete();
     level._id_5A9F delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA8()
@@ -583,6 +618,8 @@ _id_5AA8()
     var_1 delete();
     var_2 delete();
     var_4 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AA9( var_0, var_1, var_2, var_3 )
@@ -602,11 +639,15 @@ _id_5AA9( var_0, var_1, var_2, var_3 )
         level._id_59A0 thread maps\_anim::_id_124E( var_0, var_2, var_3 );
         common_scripts\utility::flag_wait( "debate_starting" );
     }
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AAA()
 {
     level._id_5AA0 waittillmatch( "single anim", "sub_cliff_ru2_suspicious" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_0116()
@@ -652,12 +693,16 @@ _id_5AAB()
     level._id_59A0 thread maps\_anim::_id_1246( var_2, "intro_cine_pres_binder" );
     maps\_audio::aud_send_msg( "pres_drops_paper" );
     level._id_58BA waittillmatch( "single anim", "drop_folder" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AAC( var_0 )
 {
     maps\_audio::aud_send_msg( "start_news" );
     level._id_59A0 maps\_anim::_id_1246( level._id_5AAD, "intro_door2_assistant_open" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AAE( var_0 )
@@ -708,6 +753,8 @@ _id_5AAE( var_0 )
     level._id_5A96 thread _id_5ABC( "chair4", "intro_chair4" );
     level._id_58C7 thread _id_5ABC( "chair5", "intro_chair5" );
     level._id_5A97 thread _id_5ABC( "chair6", "intro_chair6" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
     var_3 = getent( "chair8", "targetname" );
     var_3._id_1032 = "conf_chair";
     var_3 maps\_anim::_id_1244();
@@ -731,6 +778,8 @@ _id_5AB2()
     var_0 = randomfloatrange( 0.0, 2.0 );
     wait(var_0);
     thread _id_5A9B();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AB3()
@@ -760,6 +809,8 @@ _id_5AB3()
     level._id_58C4 linkto( level._id_5AB7, "J_prop_1" );
     level._id_59A0 thread maps\_anim::_id_11CF( level._id_5AB9, "debate_cine_door4_blown_off" );
     level._id_5AB8 linkto( level._id_5AB9, "J_prop_1" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ABA()
@@ -779,6 +830,8 @@ _id_5ABA()
     var_0 unlink();
     var_1 unlink();
     var_2 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ABB()
@@ -795,6 +848,8 @@ _id_5ABB()
 
     level._id_5A98 delete();
     common_scripts\utility::flag_set( "delete_intro_ambient_guys" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ABC( var_0, var_1 )
@@ -805,6 +860,8 @@ _id_5ABC( var_0, var_1 )
     level._id_59A0 maps\_anim::_id_11CF( var_2, var_1 );
     self waittillmatch( "single anim", "swivel_chair" );
     level._id_59A0 maps\_anim::_id_1246( var_2, var_1 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ABD()
@@ -821,6 +878,8 @@ _id_5ABD()
     var_0 unlink();
     var_1 unlink();
     var_2 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ABE( var_0 )
@@ -898,6 +957,8 @@ _id_5AC1()
     thread _id_5AE7();
     thread _id_5AF0();
     level._id_58BA waittillmatch( "single anim", "notify_rescue" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC3()
@@ -925,6 +986,8 @@ _id_5AC4()
     level.player enableweapons();
     level.player allowcrouch( 1 );
     level._id_58CB maps\_utility::_id_257D();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC5()
@@ -932,6 +995,8 @@ _id_5AC5()
     level._id_58D2 waittillmatch( "single anim", "pistol_pullout" );
     level._id_58D2 maps\_utility::_id_257D();
     level._id_58D2 maps\_utility::_id_104A( level._id_58D2._id_20A3, "primary" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC6()
@@ -939,12 +1004,16 @@ _id_5AC6()
     level._id_58C9 waittillmatch( "single anim", "pistol_pullout" );
     level._id_58C9 maps\_utility::_id_257D();
     level._id_58C9 maps\_utility::_id_104A( level._id_58C9._id_20A3, "primary" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC7()
 {
     level._id_58CB waittillmatch( "single anim", "grab_gun" );
     level._id_58CB maps\_utility::_id_257D();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC8()
@@ -955,6 +1024,8 @@ _id_5AC8()
     wait 0.2;
     var_0 playsound( "hijack_hj2_standback", "done3" );
     var_0 waittill( "done3" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AC9()
@@ -1002,6 +1073,8 @@ _id_5AC9()
     level.player enableweapons();
     wait 1;
     thread _id_5AEB();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ACA()
@@ -1021,6 +1094,8 @@ _id_5ACA()
     thread maps\hijack_code::_id_595F();
     var_1 delete();
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ACB()
@@ -1060,6 +1135,8 @@ _id_5ACB()
     var_3 linkto( var_6, "J_prop_1" );
     level._id_59A0 thread maps\_anim::_id_1246( var_5, "debate_props_frnt_lurch" );
     level._id_59A0 thread maps\_anim::_id_1246( var_6, "debate_props_bck_lurch" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ACC()
@@ -1076,6 +1153,8 @@ _id_5ACC()
     maps\hijack_code::_id_5956( "hijack_fso3_weaponsfree", level._id_5AC2 );
     wait 0.1;
     maps\hijack_code::_id_5956( "hijack_fso2_alert", level._id_5AC2 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ACD()
@@ -1087,6 +1166,8 @@ _id_5ACD()
     var_0 maps\_anim::_id_1246( var_0, "debate_cine_lurchcam" );
     self unlink();
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ACE()
@@ -1345,6 +1426,8 @@ _id_5AD6()
     level.player allowcrouch( 1 );
     level.player allowprone( 1 );
     thread _id_0118();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AD7()
@@ -1418,6 +1501,8 @@ _id_5ADD()
     maps\_utility::_id_11F4( "hijack_plt_losingcontrol" );
     wait 1.1;
     maps\_utility::_id_11F4( "hijack_plt_stalled" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ADE()
@@ -1429,6 +1514,8 @@ _id_5ADE()
     level._id_5A96 waittillmatch( "single anim", "drop_remote" );
     level._id_5AB0 unlink();
     thread _id_5ABB();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5ADF()
@@ -1558,6 +1645,8 @@ _id_5AE3()
 
     level._id_58D2 allowedstances( "stand", "crouch" );
     level._id_58D2._id_48BC = undefined;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_0118()
@@ -1581,6 +1670,8 @@ _id_5AE4()
     level._id_5AE6 maps\_vehicle::_id_2A73();
     level._id_5AE5 thread _id_0321();
     level._id_5AE6 thread _id_0321();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AE7()
@@ -1619,6 +1710,8 @@ _id_5AE7()
 
     var_0 delete();
     level._id_5A99 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AE8()
@@ -1639,6 +1732,8 @@ _id_5AE8()
     var_0 waittillmatch( "single anim", "end" );
     self unlink();
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AE9()
@@ -1656,6 +1751,8 @@ _id_5AE9()
     common_scripts\utility::flag_clear( "hallsun_left" );
     common_scripts\utility::flag_clear( "hallsun_right2" );
     common_scripts\utility::flag_clear( "hallsun_left2" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AEA()
@@ -1663,7 +1760,7 @@ _id_5AEA()
     wait 1.25;
     var_0 = ( 0.0, 90.0, 0.0 );
     var_1 = anglestoforward( var_0 );
-    level.player setvelocity( var_1 * 100 );
+    level.player setvelocity( var_1 * 100 ); //Here
     level.player maps\hijack_code::_id_595C();
     wait 1.5;
     level.player maps\hijack_code::_id_595E();
@@ -1694,6 +1791,8 @@ _id_5AEB()
 
     common_scripts\utility::flag_wait( "zero_g_trig" );
     var_2 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AEC()
@@ -1713,6 +1812,8 @@ _id_5AEC()
     common_scripts\utility::flag_wait( "zero_g_trig" );
     level notify( "end_cabinet_loop" );
     var_2 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AED()
@@ -1817,6 +1918,8 @@ _id_5AF0()
     common_scripts\utility::flag_wait( "prezerog_extra_guys" );
     var_7 = maps\_utility::_id_272F( "pre_zerog_terrorist_wave2" );
     level._id_5AF1 = maps\_utility::_id_2641( "pre_zerog_terrorists", "script_noteworthy" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AF2()
@@ -1854,8 +1957,8 @@ _id_5AF3()
 _id_5AF5()
 {
     level.player setstance( "stand" );
-    level.player allowcrouch( 0 );
-    level.player allowprone( 0 );
+    level.player allowcrouch( 1 ); //Here
+    level.player allowprone( 1 ); //Here
     level.player enabledeathshield( 1 );
 
     if ( level.console )
@@ -1882,7 +1985,7 @@ _id_5AF5()
     {
         var_4 = level.player getweaponammoclip( "fnfiveseven" );
         var_5 = level.player getweaponammostock( "fnfiveseven" );
-        level.player takeweapon( "fnfiveseven" );
+        level.player takeweapon( "fnfiveseven" ); //HERE
         level.player giveweapon( "fnfiveseven_zero_g" );
         level.player switchtoweapon( "fnfiveseven_zero_g" );
         level.player setweaponammoclip( "fnfiveseven_zero_g", var_4 );
@@ -2026,6 +2129,8 @@ _id_5AF5()
     level.player allowprone( 1 );
     wait 2;
     maps\_utility::_id_1C43();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AF7()
@@ -2088,6 +2193,8 @@ _id_5AF7()
         maps\_utility::_id_282E( "pre_zerog_guys" );
 
     maps\_utility::_id_265A( "axis" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AF8()
@@ -2112,6 +2219,8 @@ _id_5AF8()
     level._id_5A89._id_20AF = 100;
     level._id_5A89.ignoreall = 1;
     thread _id_5B18();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AFA()
@@ -2120,6 +2229,8 @@ _id_5AFA()
     self._id_1032 = self.script_noteworthy;
     self.ignoreme = 1;
     maps\_utility::_id_1057();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5AFB( var_0, var_1, var_2, var_3 )
@@ -2141,6 +2252,8 @@ _id_5AFB( var_0, var_1, var_2, var_3 )
     level._id_5AF4 thread maps\_anim::_id_1246( var_4, var_1 );
     self animcustom( ::_id_5B00 );
     self._id_0D45 = ::_id_5B01;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_0119()
@@ -2389,6 +2502,8 @@ _id_5B08( var_0 )
     level._id_5AF4 maps\_anim::_id_1246( var_1, var_0 );
     waittillframeend;
     var_1 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B09( var_0 )
@@ -2417,6 +2532,8 @@ _id_5B0A( var_0, var_1 )
     level._id_5AF4 thread maps\_anim::_id_11CF( self, var_1 );
     common_scripts\utility::flag_wait( "zero_g_trig" );
     level._id_5AF4 maps\_anim::_id_1246( self, var_1 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B0B( var_0 )
@@ -2429,6 +2546,8 @@ _id_5B0B( var_0 )
     self linkto( var_1, "J_prop_1" );
     common_scripts\utility::flag_wait( "zero_g_trig" );
     level._id_5AF4 maps\_anim::_id_1246( var_1, var_0 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B0C()
@@ -2473,6 +2592,8 @@ _id_5B0E( var_0 )
     wait 0.7;
     common_scripts\utility::array_thread( level._id_5961, maps\hijack_code::_id_595A, ( 0.0, 0.0, 0.0 ), 0.75, 0, 0 );
     setphysicsgravitydir( ( 0.0, -0.02, -1.0 ) );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B0F( var_0 )
@@ -2488,6 +2609,8 @@ _id_5B0F( var_0 )
     wait 0.5;
     level.player playerlinktodelta( level._id_5AF6, "tag_origin", 1, 180, 180, 60, 60 );
     level.player enableweapons();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B10( var_0 )
@@ -2545,6 +2668,8 @@ _id_5B15( var_0 )
     maps\_audio::aud_send_msg( "zero_g_bodyslam4" );
     wait 2.5;
     level.player enableweapons();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B16( var_0 )
@@ -2649,6 +2774,8 @@ _id_5B1A()
     var_3 = var_1 * var_2;
     thread _id_5B1B( var_3 );
     wait(var_3);
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
     level._id_58D2 show();
     level._id_5A9A show();
     level._id_58BA show();
@@ -2710,6 +2837,8 @@ _id_5B1D()
     var_1 = getnode( "president_top_of_stairs", "targetname" );
     level._id_58BA.goalradius = 32;
     level._id_58BA setgoalnode( var_1 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B1E()
@@ -2815,6 +2944,8 @@ _id_5B22()
     thread maps\hijack_code::_id_596C( var_0, var_0.size, "all_hallway_terrorists_dead" );
     common_scripts\utility::flag_set( "exited_dining_room" );
     level._id_5AC2._id_1B71 = 1;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B23()
@@ -2850,6 +2981,8 @@ _id_5B23()
     common_scripts\utility::flag_wait_any( "start_plane_crash_aisle_1", "start_plane_crash_aisle_2" );
     maps\_spawner::_id_213C( 100 );
     thread maps\hijack_crash::_id_5A1F();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B24()
@@ -2923,6 +3056,8 @@ _id_5B29()
     level._id_58D2.ignoresuppression = 1;
     level._id_58D2.allowpain = 0;
     common_scripts\utility::flag_wait( "move_commander_to_first_node" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     if ( isdefined( level._id_58D2 ) )
     {
@@ -2964,6 +3099,8 @@ _id_5B2A()
 
 _id_5B2B()
 {
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
     level endon( "exited_dining_room" );
     level._id_5AC2 = spawn( "script_origin", level.player.origin );
     level._id_5AC2 linkto( level.player );
@@ -2989,6 +3126,8 @@ _id_5B2C()
     maps\hijack_code::_id_5956( "hijack_fc2_rapidrate", level._id_5B2D );
     maps\hijack_code::_id_5956( "hijack_fc1_slowdescent", level._id_5B2D );
     level._id_5B2D._id_1B71 = 1;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B2E()
@@ -3010,6 +3149,8 @@ _id_5B2E()
     level._id_5A9A._id_0D45 = undefined;
     level._id_5A9A kill();
     level._id_5B19 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B2F()
@@ -3023,6 +3164,8 @@ _id_5B2F()
     maps\_utility::_id_2727( maps\_utility::_id_2816( "secure_daughter" ) );
     common_scripts\utility::flag_wait( "commander_finished_find_daughter_anim" );
     maps\hijack_crash::_id_5A19();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B30()
@@ -3032,10 +3175,14 @@ _id_5B30()
     setdvar( "ui_deadquote", &"HIJACK_FAIL_CRASH" );
     level notify( "mission failed" );
     maps\_utility::_id_1826();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B31( var_0 )
 {
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
     var_1 = getaiarray();
     var_2 = 0;
     var_3 = 0;
@@ -3166,6 +3313,8 @@ _id_5B35()
     thread _id_5B3C();
     level._id_58D2 waittillmatch( "single anim", "plane_shift_player" );
     level.player disableweapons();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     if ( !common_scripts\utility::flag( "no_player_slide" ) )
     {
@@ -3229,6 +3378,8 @@ _id_5B39()
     level.player playersetgroundreferenceent( level._id_5960 );
     var_1 delete();
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B3A()
@@ -3254,6 +3405,8 @@ _id_5B3A()
 
     level notify( "stop_hallway_shake" );
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B3B()
@@ -3270,6 +3423,8 @@ _id_5B3B()
     var_4 rotateyaw( -45, 0.05 );
     var_5 = getent( "cargo_door06", "targetname" );
     var_5 rotateyaw( -52, 0.05 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B3C()
@@ -3313,6 +3468,8 @@ _id_5B3C()
     var_16 thread _id_5B3D( "J_prop_1", "prop_toolbox_shift", undefined, level._id_5A16 );
     var_17 thread _id_5B3D( "J_prop_1", "prop_propane1_shift", undefined, level._id_5A16 );
     var_18 thread _id_5B3D( "J_prop_1", "prop_propane4_shift", "prop_propane4_loop", level._id_5A16 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B3D( var_0, var_1, var_2, var_3 )
@@ -3365,12 +3522,16 @@ _id_5B3E( var_0 )
         var_1 getenemyinfo( level.player );
         var_1 getenemyinfo( level._id_58D2 );
     }
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B3F( var_0 )
 {
     self endon( "death" );
     self endon( "stop_damage_watcher" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     for (;;)
     {
@@ -3400,6 +3561,8 @@ _id_5B40()
 
     wait 0.5;
     var_0 delete();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B41()
@@ -3444,6 +3607,8 @@ _id_5B41()
     maps\_utility::_id_2748( var_0, "goal" );
     wait 1;
     common_scripts\utility::flag_set( "agent_reached_comm_room" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B42()
@@ -3455,6 +3620,8 @@ _id_5B42()
     var_0 maps\_anim::_id_1246( level._id_58D2, "find_daughter_enter" );
     common_scripts\utility::flag_set( "commander_finished_find_daughter_anim" );
     var_0 thread maps\_anim::_id_124E( level._id_58D2, "find_daughter_commander_loop" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B43()
@@ -3471,6 +3638,8 @@ _id_5B43()
     var_1 = getnode( "hero_agent_crash_node", "targetname" );
     level._id_58CB setgoalnode( var_1 );
     level._id_58CB._id_117F = 1;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B44()
@@ -3517,6 +3686,8 @@ _id_5B45()
     }
 
     level._id_5A16 thread maps\_anim::_id_124E( level._id_59E0, "daughter_cry_loop" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B46()
@@ -3542,10 +3713,14 @@ _id_5B46()
     maps\_audio::aud_send_msg( "cargo_room_zone_off" );
     level waittill( "crash_impact" );
     level._id_5A16 notify( "stop_loop" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B47()
 {
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
     level waittill( "planecrash_approaching" );
     self notify( "stop_loop" );
 }
@@ -3554,6 +3729,8 @@ _id_5A1B()
 {
     level._id_58D2.ignoreme = 1;
     level._id_58CB.ignoreme = 1;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5A21()
@@ -3591,4 +3768,6 @@ _id_5A21()
     }
 
     common_scripts\utility::flag_set( "kill_cargo" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
