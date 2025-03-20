@@ -1,0 +1,14 @@
+Jugg - IMGs
+2, 8, 6, 10
+
+Delta Player Viewhands - IMGs
+6, 10, 5
+=> viewmodel_delta_sleeve_shg_col in 06, non shg in 05-10
+
+Player Legs - IMGs
+5
+=> viewmodels_legs_mw3_col
+
+Menu - IMGs
+00, 02, 03
+=> missions itself in 03, background_image and blur in 00, menu_cloud_overlay in 02,

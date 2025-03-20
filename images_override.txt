@@ -1,8 +1,0 @@
-Jugg - IMGs
-2, 8, 6, 10
-
-Delta Player Viewhands - IMGs
-6, 10, 5
-
-Player Legs - IMGs
-5
