@@ -466,7 +466,8 @@ _id_56F7( var_0 )
 _id_47D9()
 {
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_sas";
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg";
+    //level._id_1F90["player_rig"] = "viewhands_player_sas";
     level._id_0C59["player_rig"]["player_open_truck_doors"] = %london_truck_open_player;
 }
 

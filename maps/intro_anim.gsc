@@ -199,7 +199,8 @@ _id_6F3D()
     level._id_0C59["player_body"]["intro_opening_shot03"] = %intro_opening_shot03_playerbody;
     level._id_0C59["player_body"]["intro_opening_shot04"] = %intro_opening_shot04_playerbody;
     level._id_0C59["player_body"]["intro_opening_shot05"] = %intro_opening_shot05_playerbody;
-    level._id_1F90["player_body"] = "body_hero_soap_wounded";
+    //level._id_1F90["player_body"] = "body_hero_soap_wounded"; //HERE
+    level._id_1F90["player_body"] = "body_shadow_co_assault";
     level._id_1245["player_body"] = #animtree;
     level._id_11B7["nikolai"]["intro_opening_shot02_nikolai_face"] = %intro_opening_shot02_nikolai_face;
     level._id_0C59["nikolai"]["intro_opening_shot02"] = %intro_opening_shot02_nikolai;

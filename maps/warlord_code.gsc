@@ -3,6 +3,11 @@
 
 spawn_allies()
 {
+    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
+    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
+    level.player setviewmodel( "viewmodel_base_viewhands" );
+
     if ( !isdefined( level._id_4877 ) )
     {
         var_0 = getent( "price", "targetname" );
@@ -35,11 +40,6 @@ spawn_allies()
         level._id_54E0._id_0AB4 = "TF";
         level._id_54E0._id_6BDD = "g";
     }
-
-    level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
-    maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
-
     common_scripts\utility::flag_set( "allies_spawned" );
 }
 

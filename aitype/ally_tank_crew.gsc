@@ -1,4 +1,4 @@
-// IW5 GSC SOURCE
+character_shadow_co_pilot// IW5 GSC SOURCE
 // Decompiled by https://github.com/xensik/gsc-tool
 
 main()
@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m16_basic";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_pilot::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_pilot::precache();
     precacheitem( "m16_basic" );
     precacheitem( "beretta" );
     precacheitem( "beretta" );

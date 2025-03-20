@@ -20,6 +20,7 @@ main()
 _id_6B5B()
 {
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
     _id_60D5::_id_60D4();
     level._id_0C59["generic"]["london_dock_soldier_walk"] = %london_dock_soldier_walk;
     level._id_0C59["price"]["sniper_open_door"] = %hunted_open_barndoor_flathand;
@@ -202,6 +203,7 @@ _id_6B5B()
     level.scr_sound["soap"]["warlord_mct_empty"] = "warlord_mct_empty";
     level._id_0C59["warlord"]["warlord_ending"] = %warlord_standoff_warlord_pt2;
     maps\_anim::_id_1264( "warlord", "blood", ::_id_6B80, "warlord_ending" );
+
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
 }
 #using_animtree("player");
@@ -211,6 +213,7 @@ _id_683E()
     level._id_1245["player_rig"] = #animtree;
     //level._id_1F90["player_rig"] = "viewhands_player_yuri"; //HERE
     level._id_1F90["player_rig"] = "viewhands_player_delta_shg";
+
     level._id_0C59["player_rig"]["water_emerge"] = %africa_player_emerge_slow;
     level._id_0C59["player_rig"]["get_on_technical"] = %warlord_pickup_player_geton;
     level._id_0C59["player_rig"]["knock_off_technical"] = %warlord_pickup_player_knockoff;
@@ -247,6 +250,8 @@ _id_683E()
 _id_6B5C()
 {
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
+    
     level._id_1245["turret"] = #animtree;
     level._id_0C59["turret"]["get_on_technical"] = %warlord_pickup_m2_50cal_push_off;
     level._id_0C59["turret"]["technical_gunner_death"] = %warlord_pickup_m2_50cal_death;
@@ -265,13 +270,17 @@ _id_6B5C()
     level._id_0C59["mi17"]["mi17_rotors"] = %warlord_standoff_mi17_idle_rotors;
     level._id_1245["technical"] = #animtree;
     level._id_0C59["technical"]["open_gate"][0] = %africa_technical_passenger_back_idle_tailgate;
+
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
 }
 #using_animtree("script_model");
 
 _id_6B5D()
 {
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
+
     level._id_1245["sniper_rifle"] = #animtree;
     level._id_1F90["sniper_rifle"] = "viewmodel_m14_ebr";
     level._id_0C59["sniper_rifle"]["water_emerge"] = %africa_weapon_emerge_slow;
@@ -308,6 +317,8 @@ _id_6B5D()
 _id_6B5E()
 {
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
+
     level._id_0C59["dog"]["dog_eat"][0] = %africa_hyena_german_shepherd_eating_b;
     level._id_0C59["dog"]["dog_growl"] = %german_shepherd_attackidle_growl;
     level._id_0C59["dog"]["africa_hyena_hold"] = %africa_hyena_hyena;
@@ -599,6 +610,8 @@ _id_6B7D( var_0 )
 _id_6B7E( var_0 )
 {
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
+    
     level.player enableweapons();
     level.player enableoffhandweapons();
     level.player allowsprint( 1 );

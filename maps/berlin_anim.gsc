@@ -15,9 +15,11 @@ main()
 _id_4444()
 {
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_delta";
+    level._id_1F90["player_rig"] = "viewhands_player_delta_shg";
+    //level._id_1F90["player_rig"] = "viewhands_player_delta";
     level._id_1245["player_rig_bloody"] = #animtree;
     level._id_1F90["player_rig_bloody"] = "viewhands_player_delta_dirty";
+    //level._id_1F90["player_rig_bloody"] = "viewhands_player_delta_dirty";
     level._id_0C59["player_rig"]["rappel_player"] = %berlin_player_rappel;
     level._id_1245["player_legs"] = #animtree;
     level._id_1F90["player_legs"] = "viewlegs_generic";
