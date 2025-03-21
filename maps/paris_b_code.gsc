@@ -438,6 +438,7 @@ _id_7775()
     level._id_76BA maps\_utility::_id_123B();
     var_0 maps\_anim::_id_124A( level._id_76BA, "gate_ambush" );
     common_scripts\utility::flag_set( "flag_combat_staging_room" );
+    level._id_5166.name = "Volk";
 
     if ( !common_scripts\utility::flag( "flag_catacombs_enemy_gate_abort" ) )
     {
@@ -583,6 +584,7 @@ _id_7777()
     level._id_76BA thread maps\paris_shared::_id_50AE( 234, 0.8, 1.2 );
     thread _id_77ED( 30, &"PARIS_FAIL_VOLK_ESCAPED" );
     thread _id_777D();
+    level._id_5166.name = "Volk";
 }
 
 _id_777C( var_0 )
@@ -608,6 +610,7 @@ _id_777D()
 
 _id_777E( var_0, var_1 )
 {
+    level._id_5166.name = "Volk";
     var_1 maps\_utility::_id_1902();
     thread maps\_utility::_id_273C( 0.1, 40 );
     maps\_utility::delaythread( 2, maps\_utility::_id_273C, 1.5, 65 );
@@ -639,6 +642,7 @@ _id_7780()
     var_1.ignoreall = 1;
     var_1 maps\paris_shared::_id_5085( getnode( "node_ai_staging_room_volk_guard_2", "targetname" ), 1 );
     var_2 = getent( "info_v_infrastructure_hall", "targetname" );
+    level._id_5166.name = "Volk";
 
     if ( isalive( var_1 ) )
         var_1 setgoalvolumeauto( var_2 );
@@ -661,6 +665,7 @@ _id_7781()
     var_1 = getent( "info_v_infrastructure_hall", "targetname" );
     var_0 cleargoalvolume();
     var_0 setgoalvolumeauto( var_1 );
+    level._id_5166.name = "Volk";
 }
 
 _id_7782()
@@ -681,6 +686,7 @@ _id_7782()
     maps\paris_shared::_id_50DA( "jank_volk_boiler_room_escape_delete", 1, var_0 );
     var_0 delete();
     common_scripts\utility::flag_set( "flag_volk_boiler_room_escape_complete" );
+    level._id_5166.name = "Volk";
 }
 
 _id_7783()
@@ -701,6 +707,7 @@ _id_7784()
     self endon( "stop_fail_if_volk_dies" );
     self waittill( "death" );
     setdvar( "ui_deadquote", &"PARIS_FAIL_CAPTURE_VOLK_ALIVE" );
+    level._id_5166.name = "Volk";
     maps\_utility::_id_1826();
 }
 
@@ -805,12 +812,14 @@ _id_778C()
 
 _id_778D( var_0, var_1 )
 {
+    
     var_2 = getent( "ali_guard_02", "script_noteworthy" );
     var_3 = var_2 maps\_utility::_id_166F( 1 );
     var_4 = getent( "chemical_ali", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     level._id_7778 = var_4;
     var_4._id_1032 = "volk";
     var_3._id_1032 = "sedan_guard";
+    level._id_5166.name = "Volk";
 
     if ( level._id_1F19 != "chase" )
         maps\paris_shared::_id_50DA( "jank_volk_enter_car_spawn", 1, level._id_778E.origin + ( 0.0, 0.0, 64.0 ) );
@@ -850,6 +859,7 @@ _id_7790()
 {
     wait 6;
     var_0 = getent( "blocker_ai_volk_sedan_escape", "targetname" );
+    level._id_5166.name = "Volk";
     var_0 connectpaths();
     var_0 delete();
 }
@@ -1818,6 +1828,7 @@ _id_77D5()
     common_scripts\utility::flag_set( "flag_failure_did_not_shoot" );
     wait 4;
     setdvar( "ui_deadquote", &"PARIS_FAIL_SHOOT_VOLKS_CAR" );
+    level._id_5166.name = "Volk";
     maps\_utility::_id_1826();
     level waittill( "forever" );
 }
@@ -1827,6 +1838,7 @@ _id_77D6( var_0 )
     var_1 = maps\paris_shared::_id_5076( "volk_sedan_ending_driver", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     var_2 = maps\paris_shared::_id_5076( "volk_sedan_ending_guard_r", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     var_3 = maps\paris_shared::_id_5076( "volk_sedan_ending_guard_l", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
+    level._id_5166.name = "Volk";
     var_1 thread _id_77D9();
     var_2 thread _id_77DB();
     var_3 thread _id_77DC();
@@ -2248,6 +2260,7 @@ _id_77E2( var_0 )
     var_2 delete();
     level._id_7797 delete();
     common_scripts\utility::flag_set( "flag_obj_capture_volk_complete" );
+    level._id_5166.name = "Volk";
     maps\paris_shared::_id_50E1();
 }
 
@@ -2413,6 +2426,7 @@ _id_77ED( var_0, var_1 )
 {
     level notify( "escape_timer_countdown_stop" );
     level endon( "escape_timer_countdown_stop" );
+    level._id_5166.name = "Volk";
     common_scripts\utility::flag_wait_or_timeout( "flag_volk_escaped", var_0 );
     setdvar( "ui_deadquote", var_1 );
     maps\_utility::_id_1826();
