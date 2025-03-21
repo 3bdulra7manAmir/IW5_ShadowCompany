@@ -1656,6 +1656,7 @@ _id_77CC()
     var_1._id_1032 = var_0._id_1032;
     var_1 linkto( var_0, "tag_body" );
     var_1._id_1032 = "escape_sedan";
+    level._id_5166.name = "Volk";
     var_0 _id_77CE();
     var_1 _id_77CE();
     var_2 = maps\paris_shared::_id_5076( "chemical_ali", "script_noteworthy" );
@@ -1782,6 +1783,7 @@ _id_77D3()
     common_scripts\utility::flag_set( "flag_player_shot_sedan_ending" );
     thread _id_03A5::_id_5160( level._id_5166 );
     thread _id_77D4();
+    level._id_5166.name = "Volk";
 }
 
 _id_77D4()
@@ -1808,6 +1810,7 @@ _id_77D4()
         var_11 += var_10;
         common_scripts\utility::waitframe();
     }
+    level._id_5166.name = "Volk";
 }
 
 _id_77D5()
@@ -2003,6 +2006,7 @@ _id_77D9()
     level._id_5166 maps\_anim::_id_1246( self, "ending_breach_intro", "tag_driver" );
     self.team = "neutral";
     level._id_5166 maps\_anim::_id_1246( self, "ending_breach_death", "tag_driver" );
+    level._id_5166.name = "Volk";
 
     for (;;)
     {
@@ -2026,6 +2030,7 @@ _id_77DA()
         self linkto( level._id_5166, "tag_body", ( 0.0, 0.0, 0.0 ), ( 0.0, 0.0, 0.0 ) );
         level._id_5166 thread maps\_anim::_id_124E( self, "ending_breach_driving_loop", "volk_ender", "tag_body" );
     }
+    level._id_5166.name = "Volk";
 }
 
 _id_77DB()
@@ -2054,6 +2059,7 @@ _id_77DB()
     self._id_77D7 = 1;
     level._id_5166 maps\_anim::_id_1246( self, "ending_breach_death", "tag_guy1" );
     level._id_5166 maps\_anim::_id_124E( self, "ending_breach_death_pose", "ender", "tag_guy1" );
+    level._id_5166.name = "Volk";
 }
 
 _id_77DC()
@@ -2089,10 +2095,12 @@ _id_77DC()
     self._id_23E1 = 1;
     var_0 thread maps\_anim::_id_1246( self, "ending_breach_death", "tag_origin" );
     thread _id_77DE( var_0 );
+    level._id_5166.name = "Volk";
 
     if ( gettime() - var_1 >= 1300 )
     {
         var_7 = level._id_5166 maps\_utility::_id_1281( "chase_final_crash" );
+        level._id_5166.name = "Volk";
         var_8 = getnotetracktimes( var_7, "stair_impact" )[0] * getanimlength( var_7 );
         var_9 = level._id_774E maps\_utility::_id_1281( "chase_final_crash" );
         var_10 = getanimlength( var_9 );
@@ -2162,6 +2170,7 @@ _id_77DE( var_0 )
         physicsexplosionsphere( level.player geteye(), 96, 64, 10 );
         common_scripts\utility::waitframe();
     }
+    level._id_5166.name = "Volk";
 }
 
 _id_77DF()
@@ -2190,6 +2199,7 @@ _id_77E0()
     var_0._id_0D45 = ::_id_76B1;
     common_scripts\utility::flag_set( "flag_volk_ending_start" );
     var_1 = level._id_5166;
+    level._id_5166.name = "Volk";
     var_1._id_1032 = "escape_sedan";
     var_2 = level._id_50DE maps\paris_shared::_id_50A6( "chase_ending_start" );
     thread _id_77E2( var_2 );
@@ -2199,6 +2209,7 @@ _id_77E0()
     level._id_5166 notify( "volk_ender" );
     var_0 unlink();
     var_2 maps\_anim::_id_11DD( [ var_0, level._id_5166 ], "chase_ending_start" );
+    level._id_5166.name = "Volk";
     maps\paris_shared::_id_50DA( "chase_ending_moment", 1, var_0 );
     var_2 thread _id_77E1( level._id_5166, "chase_ending_end" );
     var_2 thread _id_77E1( var_0, "chase_ending_end" );
