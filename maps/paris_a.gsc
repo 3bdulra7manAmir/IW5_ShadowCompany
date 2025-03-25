@@ -20,7 +20,9 @@ main()
     precachestring( &"PARIS_USE_MANHOLE" );
     precacherumble( "steady_rumble" );
     precacherumble( "viewmodel_small" );
-    precacheshader( "gasmask_overlay_delta2_top" );
+    precacherumble( "viewmodel_small" );
+    precachemodel( "prop_sas_gasmask" );
+    precachemodel( "pb_gas_mask_prop" );
     precacheshader( "gasmask_overlay_delta2_bottom" );
     maps\_utility::add_hint_string( "air_support_hint", &"PARIS_AIR_SUPPORT_HINT", maps\paris_a_code::_id_5138 );
     maps\_utility::add_hint_string( "air_support_fire_hint", &"PARIS_AIR_SUPPORT_THROW_HINT", maps\paris_a_code::_id_76D7 );

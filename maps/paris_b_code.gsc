@@ -73,12 +73,12 @@ _id_7761()
 _id_7762()
 {
     thread maps\_introscreen::_id_1D97( 0.25, 0.5 );
-    level.player disableweapons();
+    //level.player disableweapons(); //HERE
     level.player setstance( "crouch" );
     level.player common_scripts\utility::delaycall( 0.05, ::setstance, "crouch" );
-    level.player allowstand( 0 );
+    level.player allowstand( 1 ); //HERE
     level.player allowcrouch( 1 );
-    level.player allowprone( 0 );
+    level.player allowprone( 1 ); //HERE
     var_0 = maps\_utility::_id_1287( "player_rig", level.player.origin );
     var_1 = maps\_utility::_id_1287( "player_gasmask", level.player.origin );
     var_2 = common_scripts\utility::spawn_tag_origin();

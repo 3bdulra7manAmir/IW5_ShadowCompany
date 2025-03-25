@@ -3,6 +3,10 @@
 
 _id_7681()
 {
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+    precachemodel( "prop_sas_gasmask" );
+    precachemodel( "pb_gas_mask_prop" );
     var_0 = 11;
     thread _id_6818();
     common_scripts\utility::flag_set( "flag_dialogue_opening" );
@@ -23,14 +27,40 @@ _id_7681()
 
 _id_6818()
 {
+    // Create the mask as a separate entity with a different variable name
+    level._id_7683.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_7683.mask setmodel( "prop_sas_gasmask" );
+    level._id_7683.mask linkto( level._id_7683, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+    // Create the mask as a separate entity with a different variable name
+    level._id_7684.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_7684.mask setmodel( "prop_sas_gasmask" );
+    level._id_7684.mask linkto( level._id_7684, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
     level._id_1441 thread maps\_utility::_id_27AF( 0.1, 11 );
     common_scripts\utility::flag_wait( "flag_little_bird_landed" );
     level.player playrumbleonentity( "viewmodel_large" );
     level._id_1441 maps\_utility::_id_27AE( 16 );
 }
 
+// attach_accessorymodels()
+// {
+//     if ( !isdefined( self.accessorymodels ) )
+//     {
+//         return;
+//     }
+    
+//     foreach ( acc in self. accessorymodels )
+//     {
+//         self attach( acc, "", true );
+//     }
+// }
+
 _id_7682()
 {
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+    //level._id_7683.accessorymodels = ["prop_sas_gasmask"]; // Define accessory models
     var_0 = [ level._id_7683, level._id_7684 ];
     var_1 = maps\_vehicle::_id_2A99( "little_bird" );
     thread maps\_friendlyfire::_id_1FE4( var_1 );
@@ -91,6 +121,9 @@ _id_7682()
     maps\_utility::_id_09C9( ::_id_7687, var_9 );
     maps\_utility::_id_09C9( ::_id_7688, var_9 );
     maps\_utility::_id_275B();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+    // level._id_7683.accessorymodels = ["prop_sas_gasmask"]; // Define accessory models
 }
 
 _id_7685()
@@ -102,11 +135,16 @@ _id_7685()
         earthquake( 0.08, 0.4, level.player.origin, 850 );
         wait(randomfloatrange( 0.05, 0.3 ));
     }
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+    //level._id_7683.accessorymodels = ["prop_sas_gasmask"]; // Define accessory models
 }
 
 _id_7686()
 {
     level notify( "little_bird_camera_shake_stop" );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_7687( var_0 )
@@ -114,6 +152,14 @@ _id_7687( var_0 )
     maps\paris_shared::_id_50DA( "roof_jumpdown_reno", 1, level._id_7684, 4 );
     var_0 maps\_anim::_id_1247( level._id_7684, "intro_roof_jumpdown" );
     level._id_7684 maps\paris_shared::_id_5085( "node_reno_heli_intro_complete", 0 );
+
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
+
+    // self._id_7683 = spawn( "pb_gas_mask_prop", ( 0.0, 0.0, 0.0 ) );
+    // //self._id_7683 setmodel( "prop_sas_gasmask" );
+    // self._id_7683 setmodel( "pb_gas_mask_prop" );
+    // self._id_7683 linkto( self, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
 }
 
 _id_7688( var_0 )
@@ -121,6 +167,8 @@ _id_7688( var_0 )
     maps\paris_shared::_id_50DA( "roof_jumpdown_sandman", 1, level._id_7683, 3 );
     var_0 maps\_anim::_id_1247( level._id_7683, "intro_roof_jumpdown" );
     level._id_7683 maps\paris_shared::_id_5085( "node_lonestar_heli_intro_complete", 0 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_7689( var_0 )
@@ -133,6 +181,8 @@ _id_7689( var_0 )
     var_0 sethoverparams( 100, 5, 5 );
     var_0 setmaxpitchroll( 30, 30 );
     var_0 vehicle_setspeed( 10, 10, 10 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_768A( var_0 )
@@ -185,6 +235,8 @@ _id_7690()
 {
     level._id_7683 thread _id_7691();
     level._id_7684 thread _id_7692();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_7691()
@@ -357,6 +409,8 @@ _id_769A()
     level._id_7683 thread maps\paris_shared::_id_50AE( 312, 0.8, 1.2, 0.25 );
     level._id_7684 thread maps\paris_shared::_id_50AE( 234, 0.8, 1.2, 0.25 );
     level.player thread maps\paris_shared::_id_50DC( var_0, 1, 3 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_769B( var_0 )
@@ -652,6 +706,8 @@ _id_0212()
         else
             thread _id_01CB();
     }
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_0213()
@@ -681,6 +737,8 @@ _id_76A6()
     maps\paris_shared::_id_507F( 6, var_4, 1 );
     level._id_7683 maps\_utility::_id_109B();
     level._id_7684 maps\_utility::_id_109B();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76A7()
@@ -738,6 +796,8 @@ _id_76A9()
     var_2 = maps\_utility::_id_0AE9( level._id_7683.origin, var_1 );
     level._id_7684 maps\paris_shared::_id_5085( var_0, 0 );
     level._id_7683 maps\paris_shared::_id_5085( var_2, 0 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76AA()
@@ -784,6 +844,8 @@ _id_76AC()
     var_2 common_scripts\utility::delaycall( 2.5, ::delete );
     common_scripts\utility::flag_wait( "flag_ai_clean_up_initial" );
     maps\_utility::_id_26C1( "trigger_color_bookstore_force" );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76AD( var_0 )
@@ -950,6 +1012,9 @@ _id_76B9()
     common_scripts\utility::array_thread( level._id_76BC, maps\_utility::_id_123B );
     level._id_76BA maps\_utility::_id_2611();
     level._id_76BB maps\_utility::_id_2611();
+    level._id_76BA.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_76BA.mask setmodel( "prop_sas_gasmask" );
+    level._id_76BA.mask linkto( level._id_7683, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
 
     foreach ( var_1 in level._id_76BC )
     {
@@ -1033,6 +1098,8 @@ _id_76BD()
     common_scripts\utility::array_thread( level._id_76BC, maps\paris_shared::_id_460C );
     thread _id_76C8();
     level.player setmovespeedscale( 1 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76BE()
@@ -1121,6 +1188,8 @@ _id_76C3()
     level._id_7683 maps\paris_shared::_id_460C();
     level._id_7683 maps\_utility::_id_109E();
     level._id_7683 maps\_utility::_id_2686();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76C4()
@@ -1262,6 +1331,8 @@ _id_76C8()
     level._id_7684 thread maps\paris_shared::_id_50AE( 234, 0.8, 1.2, 0.25 );
     level._id_76BA thread maps\paris_shared::_id_50AE( 234, 0.8, 1.2, 0.25 );
     level._id_76BB thread maps\paris_shared::_id_50AE( 234, 0.8, 1.2, 0.25 );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76C9()
@@ -1454,6 +1525,8 @@ _id_76D3()
     level._id_7683.ignoreme = 0;
     level._id_76BA.ignoreme = 0;
     level._id_76BB.ignoreme = 0;
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76D4()
@@ -1468,6 +1541,8 @@ _id_76D4()
     wait 1;
     level._id_7684 maps\_utility::_id_2686();
     level._id_7683 maps\_utility::_id_2686();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_6208()
@@ -1957,6 +2032,8 @@ _id_76E9()
     maps\_loadout::_id_1C7B( "paris", 1 );
     setdvar( "paris_transition_movie", "1" );
     maps\_utility::_id_195A();
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76ED()
@@ -2021,6 +2098,8 @@ _id_76F1()
     level.player setthreatbiasgroup( "allies" );
     level._id_7683 setthreatbiasgroup( "allies" );
     level._id_7684 setthreatbiasgroup( "allies" );
+    level._id_7683.name = "Sandman - Shadow Company";
+    level._id_7684.name = "Grinch - Shadow Company";
 }
 
 _id_76F2()
