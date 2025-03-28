@@ -1,14 +1,38 @@
 Jugg - IMGs
-2, 8, 6, 10
+02, 08, 06, 10
 
 Delta Player Viewhands - IMGs
-6, 10, 5
+06, 10, 05
 => viewmodel_delta_sleeve_shg_col in 06, non shg in 05-10
 
 Player Legs - IMGs
-5
-=> viewmodels_legs_mw3_col
+05
+=> viewmodels_legs_mw3_col 05,
 
 Menu - IMGs
 00, 02, 03
 => missions itself in 03, background_image and blur in 00, menu_cloud_overlay in 02,
+
+Price's Europe Head - IMGs
+04,
+=> price_europe_utility_a_col 04, price_europe_nvg_a_col 04, price_europe_headgear_c_col 04,
+
+Price's Africa hat AKA Headgear - IMGs
+04,
+=> price_africa_headgear_a_col 04,
+
+Sandman's headgear - IMGs
+04,
+=> sandman_headgear_b_col 04,
+
+Grinch headgear - IMGs
+02,
+=> grinch_headgear_cap_col 02,
+
+Soap headgear Coms - IMGs
+02,
+=> hero_soap_headgear_coms_col 02,
+
+Truck headgear - IMGs
+05,
+=> truck_headgear_a_col

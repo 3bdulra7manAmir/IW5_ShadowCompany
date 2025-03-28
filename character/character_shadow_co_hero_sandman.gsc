@@ -4,8 +4,8 @@
 main()
 {
     self setmodel( "body_shadow_co_assault" );
-    self attach( "head_shadow_co_b", "", 1 );
-	self.headmodel = "head_shadow_co_b";
+    self attach( "head_hero_sandman_delta", "", 1 );
+	self.headmodel = "head_hero_sandman_delta";
     self.voice = "shadowcompany";
     //self setclothtype( "vestlight" );
 }
@@ -13,5 +13,5 @@ main()
 precache()
 {
     precachemodel( "body_shadow_co_assault" );
-    precacheModel("head_shadow_co_b");
+    precacheModel("head_hero_sandman_delta");
 }
