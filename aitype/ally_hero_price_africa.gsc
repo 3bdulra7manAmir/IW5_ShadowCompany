@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m21_scoped_cloth_silenced";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_price_hat::main();
 
 }
 
@@ -33,7 +33,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_price_hat::precache();
     precacheitem( "m21_scoped_cloth_silenced" );
     precacheitem( "usp_silencer" );
     precacheitem( "fraggrenade" );
