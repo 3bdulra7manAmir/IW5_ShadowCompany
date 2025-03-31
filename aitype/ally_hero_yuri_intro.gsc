@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grunt";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_yuri::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_yuri::precache();
     precacheitem( "m4_grunt" );
     precacheitem( "deserteagle" );
     precacheitem( "fraggrenade" );

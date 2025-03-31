@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "none";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_soap::main();
 }
 
 spawner()
@@ -32,6 +32,6 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_soap::precache();
     precacheitem( "deserteagle" );
 }

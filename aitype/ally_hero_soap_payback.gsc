@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grenadier";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_soap::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_soap::precache();
     precacheitem( "m4_grenadier" );
     precacheitem( "m203_m4" );
     precacheitem( "deserteagle" );

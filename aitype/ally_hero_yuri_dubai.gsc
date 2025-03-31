@@ -1,4 +1,4 @@
-// IW5 GSC SOURCE
+character_shadow_co_hero_yuri// IW5 GSC SOURCE
 // Decompiled by https://github.com/xensik/gsc-tool
 
 main()
@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mk46_grip";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_yuri::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_yuri::precache();
     precacheitem( "mk46_grip" );
     precacheitem( "usp_silencer" );
     precacheitem( "usp_silencer" );
