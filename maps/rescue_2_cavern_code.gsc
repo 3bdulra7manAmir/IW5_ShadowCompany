@@ -976,7 +976,7 @@ _id_5E11()
     var_1 thread maps\_anim::_id_11C3( level._id_58BA, "pres_getup_president" );
     level._id_58BA.a._id_0D26 = "stand";
     level._id_58BA thread _id_5E88();
-    level._id_58BA.name = "Gen. Shepherd";
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 }
 
 _id_5E13()
@@ -1045,6 +1045,7 @@ _id_5E17()
     common_scripts\utility::array_thread( maps\_utility::_id_26C8(), maps\_utility::_id_26F3, 1 );
     common_scripts\utility::array_thread( maps\_utility::_id_26C8(), maps\_utility::_id_1057 );
     level._id_58BA maps\_utility::_id_168C( "rescue_prs_daughter" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 }
 
 _id_018B()
@@ -1072,6 +1073,7 @@ _id_018B()
     wait 1;
     level._id_45C4 maps\_utility::_id_168C( "rescue_trk_badguys" );
     maps\_utility::_id_265B( "allies" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 }
 
 _id_5E18()
@@ -1646,6 +1648,7 @@ _id_5E30()
     var_22 maps\_anim::_id_11C1( var_24, "rescue_ending_player_into_bh_player", "tag_origin" );
     common_scripts\utility::flag_set( "cavern_player_in_heli" );
     level.player playerlinktodelta( var_24, "tag_player", 1, 25, 25, 80, 80 );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 }
 
 _id_5E36( var_0 )
@@ -2189,6 +2192,7 @@ _id_5E57()
             maps\_utility::_id_104A( "deserteagle", "sidearm" );
         }
     }
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 }
 
 _id_5E59()
@@ -2451,6 +2455,7 @@ _id_5E6A()
     level endon( "kill_rescue_heli" );
     level._id_58BA endon( "death" );
     common_scripts\utility::flag_init( "player_close_to_president" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
 
     for (;;)
     {
@@ -2492,6 +2497,7 @@ _id_5E6C()
     level._id_4877 maps\_utility::_id_168C( "rescue_pri_whereareyougoing" );
     wait 5;
     level._id_58BA maps\_utility::_id_1902();
+    level._id_58BA.name = "Gen. Shepherd"; //Here
     level._id_58BA kill();
 }
 
