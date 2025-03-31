@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m14ebr";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_grinch::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_grinch::precache();
     precacheitem( "m14ebr" );
     precacheitem( "usp_silencer" );
     precacheitem( "usp_silencer" );

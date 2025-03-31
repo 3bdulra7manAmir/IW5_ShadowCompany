@@ -3,7 +3,7 @@ Jugg - IMGs
 
 Delta Player Viewhands - IMGs
 06, 10, 05
-=> viewmodel_delta_sleeve_shg_col in 06, non shg in 05-10
+=> viewmodel_delta_sleeve_shg_col in 06, non shg in 05-10, viewmodel_delta_alpha_col, viewmodel_delta_glove_dirty_col,
 
 Player Legs - IMGs
 05
@@ -12,6 +12,7 @@ Player Legs - IMGs
 Menu - IMGs
 00, 02, 03
 => missions itself in 03, background_image and blur in 00, menu_cloud_overlay in 02,
+mw3_logo_large 03, background_image 00,
 
 Price's Europe Head - IMGs
 04,
@@ -36,3 +37,8 @@ Soap headgear Coms - IMGs
 Truck headgear - IMGs
 05,
 => truck_headgear_a_col
+
+TF, UK Sounds -> LOCAL 01,
+US, UK Sounds -> LOCAL 02,
+
+

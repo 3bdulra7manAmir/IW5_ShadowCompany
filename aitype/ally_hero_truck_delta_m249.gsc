@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mk46";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_truck::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_truck::precache();
     precacheitem( "mk46" );
     precacheitem( "deserteagle" );
     precacheitem( "fraggrenade" );

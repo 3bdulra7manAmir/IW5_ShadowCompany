@@ -348,7 +348,8 @@ _id_3E6D()
 _id_47D9()
 {
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_yuri_europe";
+    //level._id_1F90["player_rig"] = "viewhands_player_yuri_europe";
+    level._id_1F90["player_rig"] = "viewhands_player_yuri";
     level._id_0C59["player_rig"]["rappel_1"] = %rescue_player_rappel_1;
     level._id_0C59["player_rig"]["rappel_2"] = %rescue_player_rappel_2_mirrored;
     level._id_0C59["generic"]["rescue_ending_player_drag_handoff_player"] = %rescue_ending_player_drag_handoff_player;

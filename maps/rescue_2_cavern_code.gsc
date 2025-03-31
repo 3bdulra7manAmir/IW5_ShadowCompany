@@ -976,6 +976,7 @@ _id_5E11()
     var_1 thread maps\_anim::_id_11C3( level._id_58BA, "pres_getup_president" );
     level._id_58BA.a._id_0D26 = "stand";
     level._id_58BA thread _id_5E88();
+    level._id_58BA.name = "Gen. Shepherd";
 }
 
 _id_5E13()
@@ -1232,6 +1233,7 @@ _id_5E1F()
     common_scripts\utility::flag_set( "cavern_run_to_heli" );
     level._id_58BA maps\_utility::_id_1057();
     level._id_58BA.ignoreme = 1;
+    level._id_58BA.name = "Gen. Shepherd";
     maps\_utility::delaythread( 4, maps\_utility::_id_1427, 8 );
 }
 
@@ -1426,6 +1428,7 @@ _id_5E30()
 
     level._id_58BA maps\_utility::_id_1057();
     level._id_58BA._id_0D28 = 1;
+    level._id_58BA.name = "Gen. Shepherd";
     level.player.ignoreme = 1;
     setsaveddvar( "hud_showStance", "0" );
     setsaveddvar( "compass", "0" );
@@ -1524,6 +1527,7 @@ _id_5E30()
     level._id_5DEF notify( "newpath" );
     wait 3;
     level._id_58BA._id_1032 = "president";
+    level._id_58BA.name = "Gen. Shepherd";
     level._id_5DEF setyawspeed( 0, 60, 60, 0 );
     level._id_5DEF vehicle_setspeedimmediate( 0, 60, 60 );
     var_21 = level._id_5DEF maps\_vehicle::_id_2A8D();
@@ -2164,6 +2168,7 @@ _id_5E57()
         thread _id_5292();
         var_0 = spawnstruct();
         level._id_58BA._id_5E12 = var_0;
+        level._id_58BA.name = "Gen. Shepherd";
         var_0.origin = self.origin;
         var_0.angles = self.angles;
         self.health = 1;
