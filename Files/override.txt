@@ -38,6 +38,12 @@ Truck headgear - IMGs
 05,
 => truck_headgear_a_col
 
+gs_mp_bw and the rest are in 02,
+02,
+
+sel1 and the rest are in 03,
+03,
+
 TF, UK Sounds -> LOCAL 01,
 US, UK Sounds -> LOCAL 02,
 

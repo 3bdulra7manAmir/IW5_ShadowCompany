@@ -28,7 +28,7 @@
     "maps": [
         {
             "firstCharacter": 115,
-            "image": "~hazel_eye_spc-rgb&hazel_eye_cos-l-67",
+            "image": "~generic_eye_spc-rgb&generic_~8a7d9489",
             "lastCharacter": 112,
             "sampleState": 11,
             "semantic": 8,

@@ -6,20 +6,17 @@ xmodel,body_shadow_co_smg
 
 xmodel,head_shadow_co_b
 xmodel,head_shadow_co_c
-
 xmodel,head_vil_shepherd
-
-xmodel,viewhands_player_delta_shg
-xmodel,viewmodel_base_viewhands
-xmodel,viewhands_player_yuri
-
 xmodel,head_shadow_co_sniper
 
 xmodel,head_price_europe_a_boonie
 xmodel,head_hero_soap
-
 xmodel,head_hero_yuri_a
 xmodel,head_hero_kamarov_a
+
+xmodel,viewmodel_base_viewhands
+xmodel,viewhands_player_delta_shg
+xmodel,viewhands_player_yuri
 
 //xmodel,body_villain_makarov_prague_escape
 //xmodel,head_makarov_b_young
@@ -27,6 +24,8 @@ xmodel,head_hero_kamarov_a
 
 xmodel,prop_sas_gasmask
 xmodel,pb_gas_mask_prop
+
+xmodel,viewlegs_generic
 
 localize,SUBTITLE_HIJACK_PRS_ALENA54
 localize,SUBTITLE_HIJACK_PRS_CENTURIES27

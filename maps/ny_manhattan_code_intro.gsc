@@ -1288,7 +1288,8 @@ _id_45F9()
     var_3 = getent( "intro_knife", "targetname" );
     var_3._id_1032 = "intro_knife";
     var_3 maps\_utility::_id_2629();
-    var_4 = "viewmodel_m4_hybrid_iw5"; //Here
+    //var_4 = "viewmodel_m4_hybrid_iw5"; //Here
+    var_4 = "viewmodel_ak47_sp_iw5"; //Here
     var_2 hidepart( "tag_acog_2", var_4 );
     var_2 hidepart( "tag_m203", var_4 );
     var_2 hidepart( "tag_shotgun", var_4 );

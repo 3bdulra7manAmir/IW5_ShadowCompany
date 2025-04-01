@@ -49,6 +49,6 @@
 48: nullptr
 49: wireframe_solid_dtex
 50: nullptr
-51: thermal_dtex
+51: nullptr
 52: debug_bumpmap_dtex
 53: debug_bumpmap_i_dtex
