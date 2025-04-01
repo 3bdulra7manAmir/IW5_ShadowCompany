@@ -977,6 +977,7 @@ _id_5E11()
     level._id_58BA.a._id_0D26 = "stand";
     level._id_58BA thread _id_5E88();
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E13()
@@ -1046,6 +1047,7 @@ _id_5E17()
     common_scripts\utility::array_thread( maps\_utility::_id_26C8(), maps\_utility::_id_1057 );
     level._id_58BA maps\_utility::_id_168C( "rescue_prs_daughter" );
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_018B()
@@ -1074,6 +1076,7 @@ _id_018B()
     level._id_45C4 maps\_utility::_id_168C( "rescue_trk_badguys" );
     maps\_utility::_id_265B( "allies" );
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E18()
@@ -1236,6 +1239,7 @@ _id_5E1F()
     level._id_58BA maps\_utility::_id_1057();
     level._id_58BA.ignoreme = 1;
     level._id_58BA.name = "Gen. Shepherd";
+    level._id_1032.name = "Gen. Shepherd";
     maps\_utility::delaythread( 4, maps\_utility::_id_1427, 8 );
 }
 
@@ -1530,6 +1534,7 @@ _id_5E30()
     wait 3;
     level._id_58BA._id_1032 = "president";
     level._id_58BA.name = "Gen. Shepherd";
+    level._id_1032.name = "Gen. Shepherd";
     level._id_5DEF setyawspeed( 0, 60, 60, 0 );
     level._id_5DEF vehicle_setspeedimmediate( 0, 60, 60 );
     var_21 = level._id_5DEF maps\_vehicle::_id_2A8D();
@@ -1649,6 +1654,7 @@ _id_5E30()
     common_scripts\utility::flag_set( "cavern_player_in_heli" );
     level.player playerlinktodelta( var_24, "tag_player", 1, 25, 25, 80, 80 );
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E36( var_0 )
@@ -2171,7 +2177,6 @@ _id_5E57()
         thread _id_5292();
         var_0 = spawnstruct();
         level._id_58BA._id_5E12 = var_0;
-        level._id_58BA.name = "Gen. Shepherd";
         var_0.origin = self.origin;
         var_0.angles = self.angles;
         self.health = 1;
@@ -2181,6 +2186,8 @@ _id_5E57()
         var_0 thread maps\_anim::_id_11C2( self, self.animation );
         wait 0.1;
         childthread _id_5E59();
+        level._id_58BA.name = "Gen. Shepherd";
+        level._id_1032.name = "Gen. Shepherd";
     }
     else
     {
@@ -2193,6 +2200,7 @@ _id_5E57()
         }
     }
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E59()
@@ -2447,6 +2455,8 @@ _id_5E69()
     var_0 linkto( self, "J_Hanging_Light_03", ( 0.0, 0.0, 0.0 ), ( 0.0, 0.0, 0.0 ) );
     self.light thread maps\_utility::_id_2765( var_0 );
     thread maps\_anim::_id_124E( self, "wind_medium" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E6A()
@@ -2455,7 +2465,6 @@ _id_5E6A()
     level endon( "kill_rescue_heli" );
     level._id_58BA endon( "death" );
     common_scripts\utility::flag_init( "player_close_to_president" );
-    level._id_58BA.name = "Gen. Shepherd"; //Here
 
     for (;;)
     {
@@ -2470,6 +2479,9 @@ _id_5E6A()
         while ( !_id_5E6B() )
             wait 0.05;
     }
+
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
 }
 
 _id_5E6B()
@@ -2485,6 +2497,9 @@ _id_5E6B()
             return 1;
     }
 
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
+
     return 0;
 }
 
@@ -2498,6 +2513,7 @@ _id_5E6C()
     wait 5;
     level._id_58BA maps\_utility::_id_1902();
     level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_1032.name = "Gen. Shepherd";
     level._id_58BA kill();
 }
 

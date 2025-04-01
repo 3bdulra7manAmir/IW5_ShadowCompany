@@ -13,9 +13,11 @@ main()
 
 _id_7A0D()
 {
-    level._id_1F90["player_rig_tunnel_crash"] = "viewhands_player_sas";
+    //level._id_1F90["player_rig_tunnel_crash"] = "viewhands_player_sas";
+    level._id_1F90["player_rig_tunnel_crash"] = "viewhands_player_delta_shg";
     level._id_0C59["player_rig_tunnel_crash"]["train_crash"] = %london_player_bail;
-    level._id_1F90["player_mount_truck"] = "viewhands_player_sas";
+    //level._id_1F90["player_mount_truck"] = "viewhands_player_sas";
+    level._id_1F90["player_mount_truck"] = "viewhands_player_delta_shg";
     level._id_0C59["player_mount_truck"]["truck_mount"] = %london_utilitytruck_player_mount;
     level._id_1245["player_mount_truck"] = #animtree;
     maps\_anim::_id_1265( "player_rig_tunnel_crash", "dirt_kickup_hands_start", "train_crash", "dirt_kickup_hands", "J_wrist_RI" );
@@ -29,7 +31,8 @@ _id_7A0D()
     maps\_anim::_id_1265( "player_rig_tunnel_crash", "dirt_kickup_head_start", "train_crash", "dirt_kickup_head", "TAG_CAMERA" );
     maps\_anim::_id_1266( "player_rig_tunnel_crash", "dirt_kickup_head_stop", "train_crash", "dirt_kickup_head", "TAG_CAMERA" );
     level._id_1245["player_rig_tunnel_crash"] = #animtree;
-    level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_sas";
+    //level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_sas";
+    level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_delta_shg";
     level._id_0C59["player_rig_tunnel_crash_teleport"]["train_crash"] = %london_player_bail;
     maps\_anim::_id_1267( "player_rig_tunnel_crash_teleport", "dirt_kickup_hands_light_start", "smoke_fill", "train_crash" );
     maps\_anim::_id_1264( "player_rig_tunnel_crash_teleport", "dirt_kickup_head_start", maps\westminster_code::_id_79BF, "train_crash" );

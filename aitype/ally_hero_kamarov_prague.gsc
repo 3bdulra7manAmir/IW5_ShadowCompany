@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "ak47";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_kamarov::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_kamarov::precache();
     precacheitem( "ak47" );
     precacheitem( "usp_silencer" );
     precacheitem( "fraggrenade" );

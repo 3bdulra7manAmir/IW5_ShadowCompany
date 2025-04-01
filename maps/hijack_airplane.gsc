@@ -2774,14 +2774,14 @@ _id_5B1A()
     var_3 = var_1 * var_2;
     thread _id_5B1B( var_3 );
     wait(var_3);
-    level._id_58BA.name = "Gen. Shepherd"; //Here
-    level._id_5AA0.name = "Alena Shepherd"; //Here
     level._id_58D2 show();
     level._id_5A9A show();
     level._id_58BA show();
     level._id_58CB show();
     level._id_58D2 maps\_utility::_id_27A1( getnode( "teleport_hero_agent", "targetname" ) );
     level._id_58D2 thread maps\_utility::_id_168C( "hijack_cmd_retakecockpit" );
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     if ( isalive( self ) )
     {
@@ -3099,8 +3099,6 @@ _id_5B2A()
 
 _id_5B2B()
 {
-    level._id_58BA.name = "Gen. Shepherd"; //Here
-    level._id_5AA0.name = "Alena Shepherd"; //Here
     level endon( "exited_dining_room" );
     level._id_5AC2 = spawn( "script_origin", level.player.origin );
     level._id_5AC2 linkto( level.player );
@@ -3111,6 +3109,8 @@ _id_5B2B()
     wait 0.75;
     maps\hijack_code::_id_5956( "hijack_fso2_altered", level._id_5AC2 );
     wait 0.1;
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B2C()
@@ -3181,8 +3181,6 @@ _id_5B30()
 
 _id_5B31( var_0 )
 {
-    level._id_58BA.name = "Gen. Shepherd"; //Here
-    level._id_5AA0.name = "Alena Shepherd"; //Here
     var_1 = getaiarray();
     var_2 = 0;
     var_3 = 0;
@@ -3216,6 +3214,9 @@ _id_5B31( var_0 )
 
     if ( !maps\_utility::_id_0A36() )
         level._id_58D2 thread maps\_anim::_id_11C1( level._id_58D2, "hijack_generic_stumble_stand1" );
+    
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B33( var_0, var_1 )
@@ -3313,8 +3314,6 @@ _id_5B35()
     thread _id_5B3C();
     level._id_58D2 waittillmatch( "single anim", "plane_shift_player" );
     level.player disableweapons();
-    level._id_58BA.name = "Gen. Shepherd"; //Here
-    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     if ( !common_scripts\utility::flag( "no_player_slide" ) )
     {
@@ -3331,6 +3330,9 @@ _id_5B35()
 
     level.player enableweapons();
     wait 1.0;
+
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B37( var_0, var_1 )
@@ -3530,8 +3532,6 @@ _id_5B3F( var_0 )
 {
     self endon( "death" );
     self endon( "stop_damage_watcher" );
-    level._id_58BA.name = "Gen. Shepherd"; //Here
-    level._id_5AA0.name = "Alena Shepherd"; //Here
 
     for (;;)
     {
@@ -3543,6 +3543,9 @@ _id_5B3F( var_0 )
             self notify( "stop_damage_watcher" );
         }
     }
+
+    level._id_58BA.name = "Gen. Shepherd"; //Here
+    level._id_5AA0.name = "Alena Shepherd"; //Here
 }
 
 _id_5B40()

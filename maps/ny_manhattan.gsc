@@ -180,6 +180,7 @@ main()
     precacheitem( "m4_grunt_reflex_optim" );
     precacheitem( "m4_hybrid_grunt_optim" );
     precacheitem( "m4_hybrid_grunt_reflex_optim" );
+    precacheitem( "ak47_silencer_reflex" ); //HERE
     precachemodel( "viewmodel_ak47_sp_iw5" ); //HERE
     precacheitem( "ak47_silencer_reflex" ); //HERE
     precacheitem( "rpg_straight" );

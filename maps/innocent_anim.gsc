@@ -105,7 +105,8 @@ _id_043C()
 _id_7A0D()
 {
     level._id_1245["player_rig_tunnel_crash_teleport"] = #animtree;
-    level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_sas";
+    //level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_sas";
+    level._id_1F90["player_rig_tunnel_crash_teleport"] = "viewhands_player_delta_shg";
     level._id_0C59["player_rig_tunnel_crash_teleport"]["train_crash"] = %london_player_bail;
     maps\_anim::_id_1267( "player_rig_tunnel_crash_teleport", "dirt_kickup_hands_light_start", "smoke_fill", "train_crash" );
     maps\_anim::_id_1264( "player_rig_tunnel_crash_teleport", "transition", maps\london_west::_id_0489, "train_crash" );
