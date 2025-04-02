@@ -34,10 +34,12 @@ _id_47D9()
     level._id_0C59["player_rig"]["helo_jump_3"] = %dubai_helo_jump_player_3;
     level._id_0C59["player_rig"]["helo_jump_kick_fail"] = %dubai_helo_jump_player_kick_fail;
     level._id_0C59["player_rig"]["helo_jump_stab_fail"] = %dubai_helo_jump_player_stab_fail;
+    level._id_1F90["player_legs"] = "viewlegs_generic";
     level._id_0C59["player_legs"]["helo_jump_1"] = %dubai_helo_jump_player_leg_1;
     level._id_0C59["player_legs"]["helo_jump_2"] = %dubai_helo_jump_player_leg_2;
     level._id_0C59["player_legs"]["helo_jump_3"] = %dubai_helo_jump_player_leg_3;
     level._id_0C59["player_legs"]["helo_jump_kick_fail"] = %dubai_helo_jump_player_leg_kick_fail;
+    level._id_1F90["player_legs"] = "viewlegs_generic";
     level._id_0C59["player_rig"]["helo_jump_idle"] = %dubai_helo_jump_player_idle;
     level._id_0C59["player_rig"]["helo_jump_middle"] = %dubai_helo_jump_player_middle;
     level._id_0C59["player_rig"]["helo_jump_pull"] = %dubai_helo_jump_player_pull;
@@ -279,7 +281,8 @@ _id_4CAC()
     level._id_1F90["knife"] = "weapon_spyderco_folding_knife";
     level._id_0C59["knife"]["helo_jump_2"] = %dubai_helo_jump_knife;
     level._id_1245["deagle"] = #animtree;
-    level._id_1F90["deagle"] = "viewmodel_desert_eagle_sp_iw5";
+    //level._id_1F90["deagle"] = "viewmodel_desert_eagle_sp_iw5";
+    level._id_1F90["deagle"] = "viewmodel_g18_sp_iw5";
     level._id_0C59["deagle"]["finale_draw"] = %dubai_finale_draw_deagle;
     level._id_0C59["deagle"]["finale_draw02"] = %dubai_finale_draw_deagle02;
     level._id_0C59["deagle"]["finale_draw_fail"] = %dubai_finale_draw_fail_deagle03;

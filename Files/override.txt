@@ -6,8 +6,8 @@ Delta Player Viewhands - IMGs
 => viewmodel_delta_sleeve_shg_col in 06, non shg in 05-10, viewmodel_delta_alpha_col, viewmodel_delta_glove_dirty_col,
 
 Player Legs - IMGs
-05
-=> viewmodels_legs_mw3_col 05,
+05, 10
+=> viewmodels_legs_mw3_col 05, viewmodels_legs_mw3_nml 05, ~viewmodels_legs_mw3_spc-rgb&~05f14416 10, 
 
 Menu - IMGs
 00, 02, 03

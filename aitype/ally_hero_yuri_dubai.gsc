@@ -1,4 +1,4 @@
-character_shadow_co_hero_yuri// IW5 GSC SOURCE
+// IW5 GSC SOURCE
 // Decompiled by https://github.com/xensik/gsc-tool
 
 main()
@@ -34,7 +34,6 @@ precache()
 {
     character\character_shadow_co_hero_yuri::precache();
     precacheitem( "mk46_grip" );
-    precacheitem( "usp_silencer" );
     precacheitem( "usp_silencer" );
     precacheitem( "fraggrenade" );
 }
