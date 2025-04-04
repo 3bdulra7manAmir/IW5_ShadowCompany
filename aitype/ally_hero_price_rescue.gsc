@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grunt_rescue";
-    character\character_shadow_co_hero_price_hat::main();
+    character\character_shadow_co_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_price_hat::precache();
+    character\character_shadow_co_rnd::precache();
     precacheitem( "m4_grunt_rescue" );
     precacheitem( "at4" );
     precacheitem( "usp_silencer" );
