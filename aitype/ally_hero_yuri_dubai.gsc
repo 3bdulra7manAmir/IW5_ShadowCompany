@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mk46_grip";
-    character\character_shadow_co_hero_yuri::main();
+    character\character_shadow_co_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_yuri::precache();
+    character\character_shadow_co_rnd::precache();
     precacheitem( "mk46_grip" );
     precacheitem( "usp_silencer" );
     precacheitem( "fraggrenade" );
