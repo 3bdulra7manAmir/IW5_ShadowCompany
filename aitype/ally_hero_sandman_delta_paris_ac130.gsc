@@ -34,7 +34,7 @@ main()
             break;
     }
 
-    character\character_shadow_co_hero_sandman::main();
+    character\character_shadow_co_rnd::main();
 }
 
 spawner()
@@ -44,7 +44,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_sandman::precache();
+    character\character_shadow_co_rnd::precache();
     precacheitem( "m16_basic" );
     precacheitem( "m16_acog" );
     precacheitem( "m16_grenadier" );
