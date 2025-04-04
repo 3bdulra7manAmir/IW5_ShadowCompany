@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grenadier";
-    character\character_shadow_co_hero_grinch::main();
+    character\character_shadow_co_rnd::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_grinch::precache();
+    character\character_shadow_co_rnd::precache();
     precacheitem( "m4_grenadier" );
     precacheitem( "m203_m4" );
     precacheitem( "usp_silencer" );
