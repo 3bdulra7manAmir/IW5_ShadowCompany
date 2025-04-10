@@ -23,7 +23,7 @@ main()
 
     self.weapon = "none";
 
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_riot::main();
 }
 
 spawner()
@@ -33,7 +33,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_riot::precache();
     precacheitem( "iw5_riotshield_so" );
     //_id_05C8::_id_3AD6();
 }

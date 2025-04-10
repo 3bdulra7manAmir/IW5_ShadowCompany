@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mk46_grip";
-    character\character_shadow_co_hero_yuri::main();
+    character\character_shadow_co_riot::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_yuri::precache();
+    character\character_shadow_co_riot::precache();
     precacheitem( "mk46_grip" );
     precacheitem( "deserteagle" );
     precacheitem( "deserteagle" );
