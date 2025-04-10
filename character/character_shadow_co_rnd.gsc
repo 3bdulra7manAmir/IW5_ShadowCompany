@@ -20,7 +20,22 @@ main()
             //character\character_shadow_co_riot::main();
             //break;
     }
-	self.voice = "shadowcompany";
+	if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
+    {
+        self.voice = "taskforce";
+    }
+    else if(level.script == "ny_manhattan" || level.script == "paris_ac130" || level.script == "berlin" || level.script == "hamburg" || level.script == "rescue2")
+    {
+        self.voice = "american";
+    }
+    else if(level.script == "london")
+    {
+        self.voice = "british";
+    }
+    else
+    {
+        self.voice = "american";
+    }
     //self setclothtype( "vestlight" );
 }
 

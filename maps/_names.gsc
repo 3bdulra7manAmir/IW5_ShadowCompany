@@ -28,8 +28,7 @@ _id_1299()
     var_0[var_0.size] = "czech";
     var_0[var_0.size] = "czech_surnames";
     var_0[var_0.size] = "pmc";
-    var_0[var_0.size] = "shadowcompany";
-
+    
     for ( var_1 = 0; var_1 < var_0.size; var_1++ )
         level._id_129A[var_0[var_1]] = [];
 
