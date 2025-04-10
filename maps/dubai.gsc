@@ -188,7 +188,7 @@ _id_766B()
     precacheshader( "juggernaut_overlay_half" );
     precacheshader( "juggernaut_damaged_overlay" );
     precachemodel( "viewhands_pmc" );
-    precachemodel( "viewhands_us_army" );
+    precachemodel( "viewmodel_base_viewhands" );
     precachemodel( "viewlegs_generic" );
     precachemodel( "viewmodel_g18_sp_iw5" );
     precacheitem( "mk46" );
@@ -352,7 +352,7 @@ _id_766D()
     common_scripts\utility::flag_set( "update_obj_pos_elevator_jump_complete" );
     common_scripts\utility::flag_set( "update_obj_pos_top_floor_atrium_landing" );
     //level.player setviewmodel( "viewhands_pmc" );
-    level.player setviewmodel( "viewhands_us_army" );
+    level.player setviewmodel( "viewmodel_base_viewhands" );
 
     if ( var_0 == "top_floor" )
         return;

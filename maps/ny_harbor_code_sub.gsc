@@ -321,7 +321,7 @@ _id_4B0D()
     level notify( "stop_bob" );
     level._id_49C3 hide();
     level.player enableweapons();
-	level.player setviewmodel( "viewhands_us_army" ); //here
+	level.player setviewmodel( "viewmodel_base_viewhands" ); //here
     level.player freezecontrols( 0 );
     level.player.ignoreme = 0;
     common_scripts\utility::flag_set( "get_onto_sub" );
@@ -2616,7 +2616,7 @@ _id_4BAF()
     level._id_4BB5._id_1032 = "breach_charge2";
     level._id_4BB5 hide();
     level.player disableoffhandweapons();
-	level.player setviewmodel( "viewhands_us_army" ); //here
+	level.player setviewmodel( "viewmodel_base_viewhands" ); //here
     level.player freezecontrols( 1 );
     maps\_shg_common::_id_1670();
     thread maps\_utility::_id_265A( "allies" );

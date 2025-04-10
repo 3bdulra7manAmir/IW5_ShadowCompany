@@ -37,7 +37,7 @@ _id_459E()
 _id_3F72( var_0 ) //HERE
 {
     level.player takeallweapons();
-    level.player setviewmodel( "viewhands_us_army" ); //HERE
+    level.player setviewmodel( "viewmodel_base_viewhands" ); //HERE
     
     level.player giveweapon( "ak47_silencer_reflex" ); //HERE
     level.player setweaponammostock( "ak47_silencer_reflex", 2500 );
