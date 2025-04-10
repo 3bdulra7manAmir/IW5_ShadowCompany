@@ -476,7 +476,7 @@ _id_7576()
     var_3 destroy();
     sethudlighting( 0 );
     //level.player setviewmodel( "viewhands_pmc" );
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     level.player disableinvulnerability();
     level.player allowjump( 1 );
     level.player allowsprint( 1 );

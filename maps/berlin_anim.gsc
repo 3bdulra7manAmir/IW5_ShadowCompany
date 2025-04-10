@@ -203,7 +203,8 @@ _id_6F3D()
     level._id_0C59["reverse_breach_player_body"]["reverse_breach"] = %berlin_reverse_breach_playerbody;
     level._id_0C59["reverse_breach_player_body"]["reverse_breach_idle"][0] = %berlin_reverse_breach_playerbody_idle;
     level._id_0C59["reverse_breach_player_body"]["reverse_breach_getup"] = %berlin_reveres_breach_playerbody_getup;
-    level._id_1F90["reverse_breach_player_body"] = "body_delta_woodland_assault_aa_dusty";
+    //level._id_1F90["reverse_breach_player_body"] = "body_delta_woodland_assault_aa_dusty";
+    level._id_1F90["reverse_breach_player_body"] = "body_shadow_co_assault";
     level._id_1245["reverse_breach_player_body"] = #animtree;
 }
 

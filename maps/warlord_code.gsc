@@ -6,7 +6,7 @@ spawn_allies()
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     level._id_1F90["player_rig"] = "viewhands_player_delta_shg"; //HERE
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
 
     if ( !isdefined( level._id_4877 ) )
     {
@@ -87,7 +87,7 @@ _id_6C55()
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     common_scripts\utility::flag_set( "play_river_dialogue" );
     level.player disableweapons();
     level.player freezecontrols( 1 );
@@ -3678,7 +3678,7 @@ _id_6D41( var_0 )
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     var_2 = maps\_utility::_id_1287( "player_rig" );
 
     var_2 hide();
@@ -5146,7 +5146,7 @@ _id_6DA8( var_0 )
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     level endon( "technical_combat_complete" );
     var_1 = self gettagorigin( "tag_gunner" );
     var_0 makeunusable();
@@ -5173,7 +5173,7 @@ _id_6DAA( var_0, var_1 )
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     var_2 = [];
     var_2["player_rig"] = var_0;
     var_2["turret"] = var_1;
@@ -5243,7 +5243,7 @@ _id_6DAD( var_0 )
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
 
     level endon( "mortar_technical_hit" );
     level.player enableweapons();
@@ -5371,7 +5371,7 @@ _id_6DB2( var_0 )
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     level.player disableweapons();
     level._id_6BF1 useby( level.player );
     level._id_6BF1 detach( level._id_1F90["player_rig"], "tag_player" );
@@ -5886,7 +5886,7 @@ _id_6DD8()
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     var_0 = getent( "trig_mortar_roof_collapse", "targetname" );
     var_0 waittill( "trigger" );
     common_scripts\utility::flag_set( "mortar_timer_done" );
@@ -6954,7 +6954,7 @@ _id_6E2C()
     level.scr_model["player_rig"] = "viewhands_player_delta_shg"; //here
     //maps\_load::set_player_viewhand_model( "viewhands_player_delta_shg" ); //here
     maps\_load::_id_1F5C( "viewhands_player_delta_shg" ); //here
-    level.player setviewmodel( "viewmodel_base_viewhands" );
+    level.player setviewmodel( "viewhands_us_army" );
     var_7 = maps\_utility::_id_1287( "player_rig" );
     var_7 hide();
     level._id_45FA = maps\_utility::_id_1287( "player_legs" );

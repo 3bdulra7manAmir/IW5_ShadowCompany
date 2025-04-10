@@ -431,7 +431,8 @@ _id_56D9()
     level._id_0C59["female_gray_blue"]["lobby_death_pose_13f"][0] = %ch_pragueb_civ_in_line_13_f_death_pose;
     level._id_0C59["female_gray_blue"]["lobby_death_pose_13k"][0] = %ch_pragueb_civ_in_line_13_k_death_pose;
     level._id_1245["price_stream_model"] = #animtree;
-    level._id_1F90["price_stream_model"] = "body_tf141_assault_a";
+    //level._id_1F90["price_stream_model"] = "body_tf141_assault_a";
+    level._id_1F90["price_stream_model"] = "body_shadow_co_assault";
     level._id_0C59["price_stream_model"]["lobby_death_pose_12e"][0] = %ch_pragueb_civ_escalator_12_e_death_pose;
     level._id_1245["emt"] = #animtree;
     level._id_1F90["emt"] = "body_secret_service_assault_a";

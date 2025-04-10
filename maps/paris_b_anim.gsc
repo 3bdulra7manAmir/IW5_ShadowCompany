@@ -15,7 +15,7 @@ main()
 _id_47D9()
 {
     level._id_1245["player_rig"] = #animtree;
-    level._id_1F90["player_rig"] = "viewhands_player_delta";
+    level._id_1F90["player_rig"] = "viewhands_player_delta"; //HERE
     level._id_0C59["player_rig"]["a_b_switch_pt1"] = %paris_a_b_switch_player_pt1;
     level._id_0C59["player_rig"]["a_b_switch_pt2"] = %paris_a_b_switch_player_pt2;
     maps\_anim::_id_1264( "player_rig", "mask_off", maps\paris_b_code::_id_7742, "a_b_switch_pt1" );
