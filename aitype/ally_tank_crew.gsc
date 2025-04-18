@@ -1,4 +1,4 @@
-character_shadow_co_pilot// IW5 GSC SOURCE
+// IW5 GSC SOURCE
 // Decompiled by https://github.com/xensik/gsc-tool
 
 main()

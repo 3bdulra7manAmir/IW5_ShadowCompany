@@ -3994,7 +3994,8 @@ _id_72AC()
 
 _id_72AD()
 {
-    level.player setviewmodel( "viewhands_delta_dirty" );
+    //level.player setviewmodel( "viewhands_delta_dirty" ); //HERE
+    level.player setviewmodel( "viewmodel_base_viewhands" );
     maps\_shg_common::_id_1670();
     thread _id_72BA();
     thread _id_72AC();

@@ -872,9 +872,19 @@ _id_76AE()
     var_0 = getnode( "node_gign_1_behind_kitchen", "targetname" );
     var_1 = getent( "gign_alley", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     var_1 endon( "death" );
+    
+    // Add mask for this GIGN character
+    var_1.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    var_1.mask setmodel( "prop_sas_gasmask" );
+    var_1.mask linkto( var_1, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
     var_0 = getnode( "node_gign_1_behind_kitchen_guard", "targetname" );
     var_1 maps\paris_shared::_id_5085( var_0, 0 );
     common_scripts\utility::flag_wait( "flag_courtyard_1_wave_4" );
+    
+    // Remove mask before deleting character
+    if(isDefined(var_1.mask))
+        var_1.mask delete();
     var_1 delete();
 }
 
@@ -892,6 +902,11 @@ _id_76AF()
 
     if ( !isalive( var_6 ) )
         return;
+        
+    // Add mask for this GIGN character
+    var_6.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    var_6.mask setmodel( "prop_sas_gasmask" );
+    var_6.mask linkto( var_6, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
 
     var_6 endon( "death" );
     var_6 maps\paris_shared::_id_5085( "alley_spray_node_teleport", 0 );
@@ -901,6 +916,10 @@ _id_76AF()
     var_6 maps\_utility::_id_1902();
     var_6 maps\_utility::delaythread( 1, maps\_utility::_id_1417, "onme" );
     common_scripts\utility::flag_wait( "flag_courtyard_1_wave_4" );
+    
+    // Remove mask before deleting character
+    if(isDefined(var_6.mask))
+        var_6.mask delete();
     var_6 delete();
 }
 
@@ -934,6 +953,12 @@ _id_76B2()
     var_0 = common_scripts\utility::getstruct( "struct_gign_restaurant_wave", "targetname" );
     var_1 = getent( "gign_alley_wave", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     var_1 endon( "death" );
+    
+    // Add mask for this GIGN character
+    var_1.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    var_1.mask setmodel( "prop_sas_gasmask" );
+    var_1.mask linkto( var_1, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
     var_0 thread maps\_anim::_id_11C8( var_1, "gign_wave", "end_wave" );
     common_scripts\utility::flag_wait( "flag_gign_wave_complete" );
     wait 2;
@@ -943,6 +968,10 @@ _id_76B2()
     var_1 maps\_utility::_id_2612( 1 );
     var_1 maps\paris_shared::_id_5085( var_2, 1, 8 );
     common_scripts\utility::flag_wait( "flag_courtyard_1_wave_4" );
+    
+    // Remove mask before deleting character
+    if(isDefined(var_1.mask))
+        var_1.mask delete();
     var_1 delete();
 }
 
@@ -955,11 +984,21 @@ _id_76B3()
     var_1 = getnode( "node_gign_meeting_runner", "targetname" );
     var_2 = getent( "gign_alley_runner", "script_noteworthy" ) maps\_utility::_id_166F( 1 );
     var_2 endon( "death" );
+    
+    // Add mask for this GIGN character
+    var_2.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    var_2.mask setmodel( "prop_sas_gasmask" );
+    var_2.mask linkto( var_2, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
     var_2 maps\_utility::_id_2712();
     var_2 maps\_utility::_id_2612( 1 );
     var_0 maps\_anim::_id_11C1( var_2, "gign_meeting_runner" );
     var_2 maps\paris_shared::_id_5085( var_1, 1 );
     var_2 waittill( "goal" );
+    
+    // Remove mask before deleting character
+    if(isDefined(var_2.mask))
+        var_2.mask delete();
     var_2 delete();
 }
 
@@ -1012,14 +1051,31 @@ _id_76B9()
     common_scripts\utility::array_thread( level._id_76BC, maps\_utility::_id_123B );
     level._id_76BA maps\_utility::_id_2611();
     level._id_76BB maps\_utility::_id_2611();
-    level._id_76BA.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
-    level._id_76BA.mask setmodel( "prop_sas_gasmask" );
-    level._id_76BA.mask linkto( level._id_7683, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
 
     foreach ( var_1 in level._id_76BC )
     {
         if ( isalive( var_1 ) )
             var_1 maps\_utility::_id_2611();
+    }
+    
+    // Add gas masks for frenchie and redshirt
+    level._id_76BA.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_76BA.mask setmodel( "prop_sas_gasmask" );
+    level._id_76BA.mask linkto( level._id_76BA, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
+    level._id_76BB.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_76BB.mask setmodel( "prop_sas_gasmask" );
+    level._id_76BB.mask linkto( level._id_76BB, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
+    // Add gas masks for all GIGN extras
+    foreach ( var_1 in level._id_76BC )
+    {
+        if ( isalive( var_1 ) )
+        {
+            var_1.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+            var_1.mask setmodel( "prop_sas_gasmask" );
+            var_1.mask linkto( var_1, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+        }
     }
 
     var_3 = common_scripts\utility::getstruct( "struct_conversation_with_gign", "script_noteworthy" );
@@ -1092,8 +1148,21 @@ _id_76BD()
     maps\_utility::_id_09C9( ::_id_76C3 );
     maps\_utility::_id_09C9( ::_id_76C4 );
     maps\_utility::_id_275B();
+    
+    // At the end of the function, when cleaning up GIGN characters
     level._id_76BC = maps\_utility::_id_1361( level._id_76BC );
     level._id_76BC = common_scripts\utility::array_removeundefined( level._id_76BC );
+    
+    // Clean up masks before applying other operations
+    foreach ( var_6 in level._id_76BC )
+    {
+        if ( isalive( var_6 ) && isDefined(var_6.mask) )
+        {
+            var_6.mask delete();
+            var_6.mask = undefined;
+        }
+    }
+    
     common_scripts\utility::array_thread( level._id_76BC, maps\_utility::_id_2686 );
     common_scripts\utility::array_thread( level._id_76BC, maps\paris_shared::_id_460C );
     thread _id_76C8();
@@ -1123,6 +1192,12 @@ _id_76BF()
     var_0 = common_scripts\utility::getstruct( "struct_conversation_with_gign", "script_noteworthy" );
     var_1 = level._id_76BB;
     var_2 = maps\paris_shared::_id_5076( "conversation_blocker_wounded", "script_noteworthy" ) maps\_utility::_id_166F( 1, 1 );
+    
+    // Add gas mask for the wounded GIGN
+    var_2.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    var_2.mask setmodel( "prop_sas_gasmask" );
+    var_2.mask linkto( var_2, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
+    
     maps\paris_shared::_id_50DA( "jank_conversation_blocker_spawn", 1, var_2 );
     var_2._id_1032 = "wounded";
     var_2.drawoncompass = 0;
@@ -1176,6 +1251,10 @@ _id_76C2()
     wait 0.5;
     level._id_76BA maps\paris_shared::_id_460C();
     level._id_76BA maps\_utility::_id_2686();
+
+    level._id_76BA.mask = spawn( "script_model", ( 0.0, 0.0, 0.0 ) );
+    level._id_76BA.mask setmodel( "prop_sas_gasmask" );
+    level._id_76BA.mask linkto( level._id_7683, "tag_eye", ( -4.0, 0.0, 2.0 ), ( 120.0, 0.0, 0.0 ) );
 }
 
 _id_76C3()
