@@ -13,6 +13,9 @@ _id_1C5B()
     precachemodel( "body_shadow_co_shotgun" );
     precachemodel( "head_shadow_co_b" );
     precachemodel( "head_shadow_co_c" );
+    precachemodel( "pb_gas_mask_prop" );
+    precachemodel( "prop_sas_gasmask" );
+    precachemodel( "viewhands_sniper_udt" );
     level notify( "loadout complete" );
 }
 
@@ -268,7 +271,8 @@ _id_1C65( var_0 )
         level.player giveweapon( "flash_grenade" );
         level.player setoffhandsecondaryclass( "flash" );
         level.player switchtoweapon( "ak47_silencer_reflex" );
-        level.player setviewmodel( "viewmodel_base_viewhands" );
+        level.player setviewmodel( "viewhands_sniper_udt" );
+        //level.player setviewmodel( "viewmodel_base_viewhands" );
         level._id_0BA2 = "shadowcompany";
         return;
     }
