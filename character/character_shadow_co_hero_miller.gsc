@@ -4,8 +4,8 @@
 main()
 {
     self setmodel( "body_shadow_co_smg" );
-    self attach( "head_shadow_co_e", "", 1 );
-	self.headmodel = "head_shadow_co_e";
+    self attach( "head_shadow_co_a", "", 1 );
+	self.headmodel = "head_shadow_co_a";
     if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
     {
         self.voice = "taskforce";
@@ -28,5 +28,5 @@ main()
 precache()
 {
     precachemodel( "body_shadow_co_smg" );
-    precacheModel("head_shadow_co_e");
+    precacheModel("head_shadow_co_a");
 }

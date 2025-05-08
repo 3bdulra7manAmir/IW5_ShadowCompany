@@ -3,7 +3,7 @@
 
 main()
 {
-    self setmodel( "body_shadow_co_assault" );
+    self setmodel( "body_vil_shepherd_no_gun" );
     self attach( "head_vil_shepherd", "", 1 );
 	self.headmodel = "head_vil_shepherd";
     if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
@@ -27,6 +27,6 @@ main()
 
 precache()
 {
-    precachemodel( "body_shadow_co_assault" );
+    precachemodel( "body_vil_shepherd_no_gun" );
     precacheModel("head_vil_shepherd");
 }

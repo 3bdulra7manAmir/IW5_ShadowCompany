@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "m4_grunt";
-    character\character_shadow_co_assault_ha::main();
+    character\character_shadow_co_hero_miller::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_assault_ha::precache();
+    character\character_shadow_co_hero_miller::precache();
     precacheitem( "m4_grunt" );
     precacheitem( "usp" );
     precacheitem( "usp" );

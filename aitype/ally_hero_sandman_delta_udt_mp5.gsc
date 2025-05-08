@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "mp5_silencer_reflex_harbor";
-    character\character_shadow_co_rnd::main();
+    character\character_shadow_co_hero_miller::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_rnd::precache();
+    character\character_shadow_co_hero_miller::precache();
     precacheitem( "mp5_silencer_reflex_harbor" );
     precacheitem( "deserteagle" );
     precacheitem( "fraggrenade" );
