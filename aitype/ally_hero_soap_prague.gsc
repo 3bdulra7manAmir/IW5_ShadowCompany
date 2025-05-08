@@ -22,7 +22,7 @@ main()
     }
 
     self.weapon = "rsass_hybrid_silenced";
-    character\character_shadow_co_hero_soap::main();
+    character\character_shadow_co_hero_redcell::main();
 }
 
 spawner()
@@ -32,7 +32,7 @@ spawner()
 
 precache()
 {
-    character\character_shadow_co_hero_soap::precache();
+    character\character_shadow_co_hero_redcell::precache();
     precacheitem( "rsass_hybrid_silenced" );
     precacheitem( "rsass_hybrid_reflex_silenced" );
     precacheitem( "usp_silencer" );

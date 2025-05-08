@@ -495,7 +495,7 @@ _id_481D() //HERE
     maps\_utility::_id_26BF( "ally_colors_first_combat_blue" );
     thread maps\_utility::vision_set_fog_changes( "ny_manhattan", 0 );
     thread maps\ny_manhattan_code_intro::_id_45AF();
-    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
+    level._id_45C0.name = "Graves"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
     level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -515,7 +515,7 @@ _id_481E() //HERE
     common_scripts\utility::flag_set( "broad_squad_moveup" );
     thread maps\ny_manhattan_code_intro::_id_45C3();
     thread maps\ny_manhattan_code_intro::_id_4615();
-    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
+    level._id_45C0.name = "Graves"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -541,7 +541,7 @@ _id_481F() //HERE
     thread maps\ny_manhattan_code_intro::_id_4615();
     maps\_utility::_id_265B( "allies" );
     common_scripts\utility::flag_set( "obj_follow_to_roof_given" );
-    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
+    level._id_45C0.name = "Graves"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -596,7 +596,7 @@ _id_4820() //HERE
     thread maps\ny_manhattan_code_hind::_id_471B();
     maps\_utility::_id_265B( "allies" );
     common_scripts\utility::flag_set( "obj_jammer_given" );
-    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
+    level._id_45C0.name = "Graves"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -611,7 +611,7 @@ _id_4823() //HERE
     setsaveddvar( "sm_qualityspotshadow", 0 );
     maps\_audio::aud_send_msg( "start_stephanies_battle" );
     _id_481C( "start_stephanies_battle" );
-    level._id_45C0.name = "Sandman - Shadow Company"; //HERE
+    level._id_45C0.name = "Graves"; //HERE
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -634,7 +634,7 @@ _id_4824()
     thread maps\ny_manhattan_code_hind::_id_471B( 1 );
     common_scripts\utility::flag_set( "entering_hind" );
     thread maps\_compass::setupminimap( "compass_map_ny_manhattan" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Graves";
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -661,7 +661,7 @@ _id_4825() //HERE
     common_scripts\utility::flag_set( "hind_start_point" );
     thread maps\ny_manhattan_code_hind::_id_471B( 1 );
     common_scripts\utility::flag_set( "entering_hind" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Graves";
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }
@@ -697,7 +697,7 @@ _id_4826()
     level._id_4711 vehicle_teleport( var_2.origin, var_2.angles );
     wait 0.2;
     common_scripts\utility::flag_set( "start_finale" );
-    level._id_45C0.name = "Sandman - Shadow Company";
+    level._id_45C0.name = "Graves";
 	level._id_45A6.name = "Grinch - Shadow Company";
 	level._id_45C4.name = "Truck - Shadow Company";
 }

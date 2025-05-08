@@ -3,9 +3,9 @@
 
 main()
 {
-    self setmodel( "body_shadow_co_assault" );
-    self attach( "head_price_europe_a_boonie", "", 1 );
-	self.headmodel = "head_price_europe_a_boonie";
+    self setmodel( "body_shadow_co_shotgun" );
+    self attach( "head_shadow_co_b", "", 1 );
+	self.headmodel = "head_shadow_co_b";
     if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
     {
         self.voice = "taskforce";
@@ -27,6 +27,6 @@ main()
 
 precache()
 {
-    precachemodel( "body_shadow_co_assault" );
-    precacheModel("head_price_europe_a_boonie");
+    precachemodel( "body_shadow_co_shotgun" );
+    precacheModel("head_shadow_co_b");
 }

@@ -1359,7 +1359,7 @@ _id_45F9()
     var_0 thread maps\_anim::_id_1246( level._id_45FA, "ny_intro" );
     var_0 thread maps\_anim::_id_1246( var_3, "ny_intro" );
     var_0 maps\_anim::_id_11DE( var_6, "ny_intro" );
-    level._id_45C0.name = "Sandman - Shadow Company"; //The Correct File to Change Not ny_manhattan
+    level._id_45C0.name = "Graves"; //The Correct File to Change Not ny_manhattan
     level._id_45B6.name = "Cpl. Soucy - Shadow Company";
 	level._id_45A6.name = "Grinch - Shadow Company";
     level._id_45C4.name = "Truck - Shadow Company";

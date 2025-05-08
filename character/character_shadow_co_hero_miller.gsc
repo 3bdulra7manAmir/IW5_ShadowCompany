@@ -3,9 +3,9 @@
 
 main()
 {
-    self setmodel( "body_shadow_co_assault" );
-    self attach( "head_hero_soap", "", 1 );
-	self.headmodel = "head_hero_soap";
+    self setmodel( "body_shadow_co_smg" );
+    self attach( "head_shadow_co_e", "", 1 );
+	self.headmodel = "head_shadow_co_e";
     if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
     {
         self.voice = "taskforce";
@@ -27,6 +27,6 @@ main()
 
 precache()
 {
-    precachemodel( "body_shadow_co_assault" );
-    precacheModel("head_hero_soap");
+    precachemodel( "body_shadow_co_smg" );
+    precacheModel("head_shadow_co_e");
 }
