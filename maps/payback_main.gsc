@@ -309,6 +309,7 @@ _id_5296()
     level._id_4877 = self;
     level._id_4877 maps\_utility::_id_0D04();
     level._id_4877._id_1032 = "price";
+    level._id_4877.name = "Gen. Shepherd";
     level._id_4877 thread maps\_utility::_id_26C7();
     level._id_4877.voice = "taskforce";
     level._id_4877._id_0AB4 = "TF";

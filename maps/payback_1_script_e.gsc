@@ -13,6 +13,7 @@ _id_663A()
     maps\_compass::setupminimap( "compass_map_payback_port", "port_minimap_corner" );
     maps\payback_util::move_player_to_start();
     level._id_4877 = maps\payback_util::_id_594A( "price" );
+    level._id_4877.name = "Gen. Shepherd";
     level._id_54E0 = maps\payback_util::_id_594A( "soap" );
     level._id_6493 = maps\payback_util::_id_594A( "hannibal" );
     level._id_6491 = maps\payback_util::_id_594A( "murdock" );
@@ -179,6 +180,7 @@ _id_6646()
 
 _id_6647()
 {
+    level._id_4877.name = "Gen. Shepherd";
     level endon( "stop_price_stack_anims" );
     var_0 = common_scripts\utility::getstruct( "price_breach_stack_spot", "targetname" );
     level._id_4877.goalradius = 15;
@@ -186,6 +188,7 @@ _id_6647()
     var_0 maps\_anim::_id_1246( level._id_4877, "payback_coverstand_trans_IN_R" );
     level._id_4877 maps\_anim::_id_1246( level._id_4877, "payback_coverstand_look_moveup" );
     level._id_4877 maps\_anim::_id_124E( level._id_4877, "payback_coverstand_look_idle", "stop_price_stack_loop" );
+    level._id_4877.name = "Gen. Shepherd";
     level._id_663E.name = "waraabe";
 }
 
@@ -342,6 +345,7 @@ _id_6654()
     level._id_6656 = maps\_utility::_id_1287( "price_hat" );
     level._id_6656 linkto( level._id_4877, "J_Head", ( 0, 0, 0 ), ( 0, 0, 0 ) );
     level._id_6656 hide();
+    level._id_4877.name = "Gen. Shepherd";
     level._id_663E.name = "waraabe";
 }
 
@@ -518,6 +522,7 @@ _id_6665()
     level._id_4877 maps\_utility::_id_2686();
     level._id_4877._id_100A = 0;
     maps\payback_util::_id_64C3( "streets_init_price" );
+    level._id_4877.name = "Gen. Shepherd";
     level._id_663E.name = "waraabe";
 }
 
@@ -526,6 +531,7 @@ _id_6656()
     level._id_4877 thread maps\_anim::_id_1246( level._id_6656, "price_hat_interrogation", "J_Head" );
     wait 0.5;
     level._id_6656 show();
+    level._id_4877.name = "Gen. Shepherd";
     level._id_663E.name = "waraabe";
     //level._id_4877 setmodel( "fullbody_price_africa_assault_a_nohat" ); //Here
 }
@@ -535,6 +541,7 @@ _id_6666( var_0 )
     //level._id_4877 setmodel( "fullbody_price_africa_assault_a" ); //Here
     level._id_6656 delete();
     level._id_6666 = 1;
+    level._id_4877.name = "Gen. Shepherd";
     level._id_663E.name = "waraabe";
 }
 
@@ -648,6 +655,7 @@ _id_666D()
     level._id_6674 hide();
     level._id_663C thread maps\_anim::_id_11CF( level._id_6674, "waraabe_interrogation" );
     level._id_6675 = maps\_utility::_id_1287( "price_new_gas_mask" );
+    level._id_4877.name = "Gen. Shepherd";
     level._id_6675 hide();
     level._id_663C thread maps\_anim::_id_11CF( level._id_6675, "waraabe_interrogation" );
     level._id_6676 = maps\_utility::_id_1287( "soap_new_gas_mask" );
