@@ -3,9 +3,9 @@
 
 main()
 {
-    self setmodel( "mp_body_seal_udt_sniper" );
-    self attach( "head_shadow_co_sniper", "", 1 );
-	self.headmodel = "head_shadow_co_sniper";
+    self setmodel( "body_shadow_co_assault" );
+    self attach( "head_hero_sandman_delta", "", 1 );
+	self.headmodel = "head_hero_sandman_delta";
     if(level.script == "intro" || level.script == "pargue" || level.script == "pargue_escape" || level.script == "warlord" || level.script == "payback")
     {
         self.voice = "taskforce";
@@ -27,6 +27,6 @@ main()
 
 precache()
 {
-    precachemodel( "mp_body_seal_udt_sniper" );
-    precacheModel("head_shadow_co_sniper");
+    precachemodel( "body_shadow_co_assault" );
+    precacheModel("head_hero_sandman_delta");
 }
